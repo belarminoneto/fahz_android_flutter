@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white01"
+    android:id="@+id/terms_container"
+    tools:context=".activities.DocumentsActivity"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/relative_layout_bottom_content">
+    <LinearLayout
+        android:id="@+id/linear_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_below="@id/text_title">
+
+
+        <TextView
+            android:id="@+id/txtTermText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/terms" />
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/relative_layout_bottom_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnDialogSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/close"
+            android:textColor="@color/white_text"
+            android:background="@drawable/custom_button_enter"
+            android:layout_weight="1"
+            android:enabled="true"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/container_school_supplies">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:columnCount="3">
+
+            <LinearLayout
+                android:layout_width="101dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:id="@+id/layout_request">
+
+                <ImageButton
+                    android:id="@+id/btnRequestCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_main_action"
+                    app:srcCompat="@drawable/ic_icon_card" />
+
+                <TextView
+                    android:id="@+id/lblRequestCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/top_margin"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="4sp"
+                    android:text="@string/request_card"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_small"
+                    app:fontFamily="@font/opensans_semibold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:id="@+id/layout_refund">
+                <ImageButton
+                    android:id="@+id/btnRequestRefund"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_main_action"
+                    app:srcCompat="@drawable/ic_icon_money" />
+
+                <TextView
+                    android:id="@+id/lblRequestRefund"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/top_margin"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="4sp"
+                    android:text="@string/request_refund"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_small"
+                    app:fontFamily="@font/opensans_semibold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_receipts"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnSendReceipt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_main_action"
+                    app:srcCompat="@drawable/ic_icon_receipt" />
+
+                <TextView
+                    android:id="@+id/lblSendReceipt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/top_margin"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="4sp"
+                    android:text="@string/send_receipt"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_small"
+                    app:fontFamily="@font/opensans_semibold" />
+            </LinearLayout>
+
+
+        </GridLayout>
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

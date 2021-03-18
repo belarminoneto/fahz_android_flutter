@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/benefit_manager_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white01">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/blueHeader"
+                android:padding="10dp"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/lbHello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hi"
+                android:textSize="@dimen/title_1_size"
+                app:fontFamily="@font/opensans_bold"
+                android:textColor="@color/grey_light_text"
+                android:layout_marginTop="@dimen/top_margin"/>
+            <TextView
+                android:id="@+id/lblName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_name"
+                android:textSize="@dimen/title_1_size"
+                app:fontFamily="@font/opensans_bold"
+                android:textColor="@color/white01"
+                android:layout_marginTop="@dimen/top_margin"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question"
+                android:textSize="@dimen/text_size"
+                app:fontFamily="@font/opensans_bold"
+                android:textColor="@color/grey_light_text"
+                android:layout_marginTop="@dimen/top_margin"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/benefitsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+        </LinearLayout>
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@color/white01"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--</LinearLayout>-->
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

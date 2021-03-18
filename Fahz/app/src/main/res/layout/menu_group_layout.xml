@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/menuGroupLinear"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/menu">
+
+    <View android:id="@+id/rectangle_new"
+        android:layout_width="5dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/green"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/initialPage"
+        android:layout_marginTop="@dimen/nav_spacing"
+        android:layout_marginLeft="@dimen/nav_spacing"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white_text"
+        app:fontFamily="@font/opensans_semibold"
+        android:textSize="@dimen/text_size"
+        android:id="@+id/text_list_group" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/txtNew"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginRight="@dimen/nav_spacing"
+        android:layout_marginTop="@dimen/nav_spacing"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:paddingTop="@dimen/padding"
+        android:paddingBottom="@dimen/padding"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="1"
+        android:visibility="invisible"
+        style="@style/ThemeQtdMenu"/>
+
+    <TextView
+        android:id="@+id/txtQtd"
+        android:layout_width="@dimen/qtd_menu_group"
+        android:layout_height="@dimen/qtd_menu_group"
+        android:layout_marginRight="@dimen/nav_spacing"
+        android:layout_marginTop="@dimen/nav_spacing"
+        android:paddingBottom="@dimen/padding"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="1"
+        android:visibility="invisible"
+        style="@style/ThemeQtdMenu"/>
+
+    <ImageView
+        android:id="@+id/arrow_down"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/arrow_down_white"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/nav_spacing"
+        android:layout_marginRight="@dimen/nav_spacing"/>
+
+
+</LinearLayout>
+

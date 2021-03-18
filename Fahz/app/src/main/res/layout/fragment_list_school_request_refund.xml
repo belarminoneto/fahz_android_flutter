@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/content_request_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white01"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/grey_dark"
+        android:padding="15dp"
+        android:text="@string/choose_people"
+        android:textAllCaps="true"
+        android:textColor="@color/white01"
+        android:textSize="@dimen/text_size_small"
+        app:fontFamily="@font/opensans_bold" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/request_refund_1"
+        android:layout_marginTop="@dimen/margin_school_card_top"
+        android:padding="@dimen/school_padding"
+        android:gravity="left"
+        android:textColor="@color/grey_dark"
+        android:theme="@style/ThemeText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/request_card_2"
+        android:padding="@dimen/school_padding"
+        android:gravity="left"
+        android:textColor="@color/grey_dark"
+        android:theme="@style/ThemeText"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnInfo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/school_padding"
+            android:background="@drawable/circle_action_enable"
+            android:text="@string/question_mark"
+            android:textColor="@color/white_text"
+            app:fontFamily="@font/opensans_extrabold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="@dimen/school_padding"
+            android:text="@string/see_rules"
+            android:textColor="@color/blueHeader"
+            android:textSize="@dimen/text_size_small"
+            android:textAllCaps="false"
+            android:theme="@style/ThemeText" />
+
+    </LinearLayout>
+
+
+     <LinearLayout
+        android:id="@+id/viewDependent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/padding">
+
+        <LinearLayout
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="bottom"
+            android:paddingBottom="@dimen/margin_bottom"
+            android:orientation="vertical"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="@drawable/custom_button_enter"
+                android:paddingLeft="@dimen/padding_left_button"
+                android:paddingRight="@dimen/padding_right_button"
+                android:text="@string/button_save"
+                android:textColor="@color/white_text"
+                app:fontFamily="@font/opensansregular" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_observation"
+                android:textColorHint="@color/grey_dark"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_marginTop="@dimen/padding"
+                android:layout_marginBottom="@dimen/padding">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/observation_edit_text"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:fontFamily="@font/opensans_semibold"
+                    android:textSize="@dimen/text_size_medium"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:maxLines="11" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/recyclerViewPeople"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+     </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

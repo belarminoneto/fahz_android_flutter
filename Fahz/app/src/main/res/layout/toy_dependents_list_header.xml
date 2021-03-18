@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/see_rules_layout"
+    android:layout_below="@+id/txtRequestDescription"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toy_request_instructions"
+        android:layout_marginTop="@dimen/margin_school_card_top"
+        android:padding="@dimen/school_padding"
+        android:gravity="start"
+        android:textColor="@color/grey_dark"
+        android:theme="@style/ThemeText"/>
+
+
+    <LinearLayout
+        android:id="@+id/layout_rules"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnInfo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/school_padding"
+            android:layout_marginStart="@dimen/school_padding"
+            android:background="@drawable/circle_action_enable"
+            android:text="@string/question_mark"
+            android:textColor="@color/white_text"
+            android:textAllCaps="false"
+            app:fontFamily="@font/opensans_extrabold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="@dimen/school_padding"
+            android:text="@string/see_rules"
+            android:textColor="@color/blueHeader"
+            android:textSize="@dimen/text_size_small"
+            android:textAllCaps="false"
+            android:theme="@style/ThemeText" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

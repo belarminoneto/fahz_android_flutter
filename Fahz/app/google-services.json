@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "723133806461",
+    "firebase_url": "https://conecta-fahz.firebaseio.com",
+    "project_id": "conecta-fahz",
+    "storage_bucket": "conecta-fahz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723133806461:android:7487945c5ac0ffcc",
+        "android_client_info": {
+          "package_name": "br.com.avanade.fahz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723133806461-82e11pbgl8lqshug0o11g6v3t7eogjob.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCesPEgonO8r0fXuV5kht3HLy4StU3ZhKA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="10dp"
+    android:id="@+id/dental_container">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/firstLayoutDental"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnIncludePlan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_inclusao_plano"
+                    android:background="@drawable/circle_main_action"/>
+
+                <TextView
+                    android:id="@+id/lblIncludePlan"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_small"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/top_margin"
+                    android:lineSpacingExtra="4sp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/include_plan"
+                    app:fontFamily="@font/opensans_semibold"/>
+
+                <ImageButton
+                    android:id="@+id/btnInactivateDep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_inativar_dep"
+                    android:background="@drawable/circle_main_action"
+                    android:layout_marginTop="@dimen/top_margin"/>
+                <TextView
+                    android:id="@+id/lblInactivateDep"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_small"
+                    android:textColor="@color/black"
+                    android:lineSpacingExtra="4sp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/inactivate_dependent"
+                    android:layout_marginTop="@dimen/top_margin"
+                    app:fontFamily="@font/opensans_semibold"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/secondLayoutDental"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnIncludeDep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_incluir_dep"
+                    android:background="@drawable/circle_main_action"/>
+                <TextView
+                    android:id="@+id/lblIncludeDep"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_small"
+                    android:textColor="@color/black"
+                    android:lineSpacingExtra="4sp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/include_dependent"
+                    android:layout_marginTop="@dimen/top_margin"
+                    app:fontFamily="@font/opensans_semibold"/>
+
+                <ImageButton
+                    android:id="@+id/btnCancelPlan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_cancelar_plano"
+                    android:background="@drawable/circle_main_action"
+                    android:layout_marginTop="@dimen/top_margin"/>
+                <TextView
+                    android:id="@+id/lblCancelPlan"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_small"
+                    android:textColor="@color/black"
+                    android:lineSpacingExtra="4sp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/cancel_plan"
+                    android:layout_marginTop="@dimen/top_margin"
+                    app:fontFamily="@font/opensans_semibold"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_consultar_carteira"
+                    android:background="@drawable/circle_main_action"
+                    android:layout_marginTop="@dimen/top_margin"/>
+
+                <TextView
+                    android:id="@+id/lblCard"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_small"
+                    android:textColor="@color/black"
+                    android:lineSpacingExtra="4sp"
+                    android:layout_marginTop="@dimen/top_margin"
+                    android:gravity="center_horizontal"
+                    android:text="@string/check_card"
+                    app:fontFamily="@font/opensans_semibold"/>
+
+                <ImageButton
+                    android:id="@+id/btnRequestCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_solicitar_carteira"
+                    android:background="@drawable/circle_main_action"
+                    android:layout_marginTop="@dimen/top_margin"/>
+                <TextView
+                    android:id="@+id/lblRequestCard"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_small"
+                    android:textColor="@color/black"
+                    android:lineSpacingExtra="4sp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/request_new_card"
+                    android:layout_marginTop="@dimen/top_margin"
+                    app:fontFamily="@font/opensans_semibold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/btnExtractUse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin"
+                android:background="@drawable/circle_main_action"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_icon_files" />
+
+            <TextView
+                android:id="@+id/lblExtractUse"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="4sp"
+                android:text="@string/extract_use"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_small"
+                android:visibility="visible"
+                app:fontFamily="@font/opensans_semibold" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

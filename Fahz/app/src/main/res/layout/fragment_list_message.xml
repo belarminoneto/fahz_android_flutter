@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/content_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white01"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_dark"
+            android:padding="15dp"
+            android:text="@string/label_title_message"
+        android:textAllCaps="true"
+        android:textColor="@color/white01"
+        app:fontFamily="@font/opensans_bold"
+        android:textSize="@dimen/text_size_small"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/linear_documents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/text_title">
+
+        <View android:id="@+id/rectangle_new"
+            android:layout_width="5dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/blueHeader"
+            android:visibility="visible"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_desc_message"
+            android:textStyle="bold"
+            app:fontFamily="@font/opensans_bold"
+            android:layout_marginLeft="@dimen/nav_spacing"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textAllCaps="true"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_weight = "1.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/padding_layout_personal_data"
+            android:layout_marginRight="@dimen/padding_layout_personal_data">
+
+            <Button
+                android:id="@+id/btnRead"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/button_all_messages"
+                android:background="@drawable/custom_button_add"
+                android:textColor="@color/blue_text"
+                app:fontFamily="@font/opensansregular"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_small"
+                android:paddingLeft="@dimen/padding_left_button"
+                android:paddingRight="@dimen/padding_right_button"
+                android:visibility="visible"
+                tools:ignore="NestedWeights" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewMessage"
+            android:layout_weight="8.5"
+            android:layout_height="0dp"
+            android:layout_width="match_parent" />
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

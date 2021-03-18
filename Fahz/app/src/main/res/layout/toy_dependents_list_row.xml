@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+
+    app:cardCornerRadius="10dp">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/container_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/labelDependent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textColor="@color/grey_dark"
+                app:fontFamily="@font/opensans_semibold"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/checkboxSelect"
+                android:layout_toRightOf="@+id/checkboxSelect"
+                android:text="@string/toy_list_dependent" />
+
+            <CheckBox
+                android:id="@+id/checkboxSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelDependent" />
+
+            <TextView
+                android:id="@+id/dependent_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelDependent"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/blueHeader"
+                android:layout_toEndOf="@+id/checkboxSelect"
+                android:layout_toRightOf="@+id/checkboxSelect"
+                app:fontFamily="@font/opensans_bold"
+                android:text="adsad" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/status_eligible"
+            style="@style/ThemeDisapprovedTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/container_info"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginLeft="@dimen/margin_school_card_left_name"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="@dimen/margin_school_card_left_name"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:padding="@dimen/margin_school_card_top"
+            android:text="@string/cannot_request"
+            android:textSize="@dimen/text_size_small" />
+
+        <RelativeLayout
+            android:id="@+id/description_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/container_info"
+            >
+
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/layout_show_hide_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end|center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_hide_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textColor="@color/blueHeader"
+                    android:text="@string/toy_dependent_card_show_hide" />
+
+                <ImageView
+                    android:id="@+id/arrow_ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_arrow_down" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/layout_show_hide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_show_hide_click"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#cccccc" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:text="@string/toy_selected_justification_label" />
+
+                <EditText
+                    android:id="@+id/edt_justification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:scrollHorizontally="true"
+                    android:imeOptions="actionDone"
+                    android:layout_margin="10dp"
+                    android:hint="@string/toy_selected_justification_hint" />
+
+                <View
+                    android:id="@+id/view_separator_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/grey_border"
+                    android:visibility="visible" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewDocumentTypes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_separator_2"
+                    android:layout_above="@id/view_separator_3" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

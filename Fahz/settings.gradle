@@ -1,0 +1,9 @@
+include ':app'
+setBinding(new Binding([gradle: this]))
+evaluate(new File(
+  settingsDir,
+  '../fahzv2/.android/include_flutter.groovy'
+))
+
+include ':fahzv2'
+project(':fahzv2').projectDir = new File('../fahzv2')

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_cards"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white01"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/grey_dark"
+        android:padding="15dp"
+        android:text="@string/title_plan_card"
+        android:textAllCaps="true"
+        android:textColor="@color/white01"
+        android:textSize="@dimen/text_size_small"
+        app:fontFamily="@font/opensans_bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:id="@+id/linear_documents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_title"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/rectangle_new"
+            android:layout_width="5dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/blueHeader"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/nav_spacing"
+            android:gravity="center_vertical"
+            android:text="@string/label_plan_card"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            app:fontFamily="@font/opensans_bold" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/linear_documents"
+        android:background="@color/grey_light" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:hint="@string/hint_benefit_holder"
+        android:textSize="@dimen/text_size_medium">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/benefit_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:focusable="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium"
+            app:fontFamily="@font/opensans_semibold" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</LinearLayout>

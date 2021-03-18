@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuGroupLinear"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/elevation"
+    android:background="@drawable/round_back_item_dependent_shadow"
+    android:layout_marginBottom="@dimen/margin_bottom_list_dependent"
+    tools:targetApi="lollipop">
+
+    <View android:id="@+id/rectangle_new"
+        android:layout_width="10dp"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/blueHeader"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_dependent_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:text="Dependente 1"
+                android:textColor="@color/black"
+                app:fontFamily="@font/opensansregular"/>
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_border"
+                    android:layout_marginTop="14dp"
+                    android:layout_alignParentBottom="true"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_marginRight="@dimen/margin_bottom_shadow"
+            android:layout_marginBottom="@dimen/margin_right_shadow"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white03">
+
+            <Button
+                android:id="@+id/btnInclude"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:text="@string/adhesion_dependent"
+                android:background="@drawable/round_blue_button"
+                android:layout_margin="10dp"
+                android:textAllCaps="true"
+                android:textColor="@color/white04"
+                app:fontFamily="@font/opensansregular"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

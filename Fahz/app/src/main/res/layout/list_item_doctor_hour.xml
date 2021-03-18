@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuGroupLinear"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:targetApi="lollipop"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="100dp">
+
+
+    <Button
+        android:id="@+id/hour_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="08:00"
+        android:fontFamily="@font/opensans_bold"
+        android:textColor="@color/white01"
+        android:background="@color/blue_dark"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/title_2_size"/>
+</LinearLayout>
+

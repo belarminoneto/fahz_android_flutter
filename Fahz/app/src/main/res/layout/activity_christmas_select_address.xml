@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/content_christmas_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white01"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/grey_dark"
+            android:padding="15dp"
+            android:text="@string/christmas_title"
+            android:textAllCaps="true"
+            android:textColor="@color/white01"
+            android:textSize="@dimen/text_size_small"
+            app:fontFamily="@font/opensans_bold" />
+
+
+    <LinearLayout
+        android:id="@+id/layoutInitialInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/top_margin"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/top_margin"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnInfo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/school_padding"
+                android:background="@drawable/circle_action_enable"
+                android:text="@string/question_mark"
+                android:textAllCaps="false"
+                android:textColor="@color/white_text"
+                app:fontFamily="@font/opensans_extrabold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="@dimen/school_padding"
+                android:text="@string/see_rules"
+                android:textAllCaps="false"
+                android:textColor="@color/blueHeader"
+                android:textSize="@dimen/text_size_small"
+                android:theme="@style/ThemeText" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/christmas_margin_right"
+            android:gravity="left"
+            android:padding="@dimen/school_padding"
+            android:text="@string/christmas_title_address"
+            android:textColor="@color/grey_dark"
+            android:theme="@style/ThemeText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutUnitInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/top_margin"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="@dimen/school_padding"
+            android:text="@string/christmas_unit"
+            android:textColor="@color/grey_dark"
+            android:theme="@style/ThemeText" />
+
+        <TextView
+            android:id="@+id/lblUnitName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/school_padding"
+            android:text="0021 - ACC Ambev Jaguarina"
+            android:textColor="@color/blueHeader"
+            android:textSize="@dimen/title_1_size"
+            app:fontFamily="@font/opensans_bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="@dimen/school_padding"
+            android:text="@string/christmas_unit_address"
+            android:textColor="@color/grey_dark"
+            android:theme="@style/ThemeText" />
+
+        <TextView
+            android:id="@+id/lblAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/christmas_margin_right"
+            android:gravity="left"
+            android:paddingLeft="@dimen/school_padding"
+            android:text="Rua Barão do Bananal, 1234 Apto 1234 - Pompéia - São Paulo - SP /  050234-000"
+            android:textColor="@color/grey_light"
+            android:theme="@style/ThemeText" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutAddressInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/top_margin"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/christmas_margin_right"
+                android:gravity="left"
+                android:paddingLeft="@dimen/school_padding"
+                android:text="@string/hint_CEP"
+                android:textColor="@color/cardview_dark_background"
+                android:theme="@style/ThemeText" />
+            <TextView
+                android:id="@+id/lblCEP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/christmas_margin_right"
+                android:gravity="left"
+                android:paddingLeft="@dimen/school_padding"
+                android:text="53041350"
+                android:textColor="@color/grey_light_text"
+                android:theme="@style/ThemeText" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/christmas_margin_right"
+                android:gravity="left"
+                android:paddingLeft="@dimen/school_padding"
+                android:text="@string/hint_public_place"
+                android:textColor="@color/grey_dark"
+                android:theme="@style/ThemeText" />
+            <TextView
+                android:id="@+id/lblStreetName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/christmas_margin_right"
+                android:gravity="left"
+                android:paddingLeft="@dimen/school_padding"
+                android:text="Rua Barão do Bananal"
+                android:textColor="@color/grey_light_text"
+                android:theme="@style/ThemeText" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/christmas_margin_right"
+                android:gravity="left"
+                android:paddingLeft="@dimen/school_padding"
+                android:text="@string/hint_number"
+                android:textColor="@color/grey_dark"
+                android:theme="@style/ThemeText" />
+            <TextView
+                android:id="@+id/lblNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/christmas_margin_right"
+                android:gravity="left"
+                android:paddingLeft="@dimen/school_padding"
+                android:text="1234"
+                android:textColor="@color/grey_light_text"
+                android:theme="@style/ThemeText" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/christmas_margin_right"
+                android:gravity="left"
+                android:paddingLeft="@dimen/school_padding"
+                android:text="@string/hint_complement"
+                android:textColor="@color/grey_dark"
+                android:theme="@style/ThemeText" />
+            <TextView
+                android:id="@+id/lblComplement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/christmas_margin_right"
+                android:gravity="left"
+                android:paddingLeft="@dimen/school_padding"
+                android:text="Apto"
+                android:textColor="@color/grey_light_text"
+                android:theme="@style/ThemeText" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/christmas_margin_right"
+                android:gravity="left"
+                android:paddingLeft="@dimen/school_padding"
+                android:text="@string/hint_neighborhood"
+                android:textColor="@color/grey_dark"
+                android:theme="@style/ThemeText" />
+            <TextView
+                android:id="@+id/lblNeighborhood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/christmas_margin_right"
+                android:gravity="left"
+                android:paddingLeft="@dimen/school_padding"
+                android:text="Pompéia"
+                android:textColor="@color/grey_light_text"
+                android:theme="@style/ThemeText" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/christmas_margin_right"
+                android:gravity="left"
+                android:paddingLeft="@dimen/school_padding"
+                android:text="@string/hint_city"
+                android:textColor="@color/grey_dark"
+                android:theme="@style/ThemeText" />
+            <TextView
+                android:id="@+id/lblCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/christmas_margin_right"
+                android:gravity="left"
+                android:paddingLeft="@dimen/school_padding"
+                android:text="São Paulo"
+                android:textColor="@color/grey_light_text"
+                android:theme="@style/ThemeText" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/christmas_margin_right"
+                android:gravity="left"
+                android:paddingLeft="@dimen/school_padding"
+                android:text="@string/hint_uf"
+                android:textColor="@color/grey_dark"
+                android:theme="@style/ThemeText" />
+            <TextView
+                android:id="@+id/lblUf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/christmas_margin_right"
+                android:gravity="left"
+                android:paddingLeft="@dimen/school_padding"
+                android:text="SP"
+                android:textColor="@color/grey_light_text"
+                android:theme="@style/ThemeText" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/layoutInformation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/top_margin"
+            android:orientation="vertical"
+            android:visibility="gone">
+        <LinearLayout
+            android:id="@+id/menuGroupLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_school_card"
+            android:background="@drawable/round_school_card_shadow"
+            android:elevation="@dimen/elevation"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_school_card_top"
+            tools:targetApi="lollipop">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_school_card_shadow"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radion_same_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Manter Local de entrega atual"
+                            android:textAllCaps="false"
+                            android:textColor="@color/grey_dark"
+                            android:theme="@style/ThemeText" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/alterUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_school_card"
+            android:background="@drawable/round_school_card_shadow"
+            android:elevation="@dimen/elevation"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_school_card_top"
+            tools:targetApi="lollipop">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_school_card_shadow"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radio_new_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Alterar unidade de entrega"
+                            android:textAllCaps="false"
+                            android:textColor="@color/grey_dark"
+                            android:theme="@style/ThemeText" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/read"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="@dimen/margin_school_card_left_name"
+                            android:layout_marginRight="10dp"
+                            android:gravity="right"
+                            android:text="@string/read_more"
+                            android:textColor="@color/blueHeader"
+                            app:fontFamily="@font/opensans_semibold" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view_separator"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/grey_border"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/lblDescriptionUnit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_left_button"
+                        android:text="@string/christmas_alter_unit_desc"
+                        android:textColor="@color/grey_dark"
+                        android:textSize="@dimen/text_size"
+                        app:fontFamily="@font/opensansregular" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutUnit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_left_button"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/spinnerUnit"
+                            style="@style/Widget.AppCompat.Spinner.Underlined"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/select_array"
+                            android:theme="@style/ThemeSpinner" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/labelUnit"
+                            style="@style/AppTheme.LabelSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/hint_christmas_unit"
+                            android:textColor="@color/grey_dark"
+                            android:textSize="@dimen/text_size_small"
+                            app:fontFamily="@font/opensans_semibold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutSubsidiary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_left_button"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/spinnerSubsidiary"
+                            style="@style/Widget.AppCompat.Spinner.Underlined"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/select_array"
+                            android:theme="@style/ThemeSpinner" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/labelSubsidiary"
+                            style="@style/AppTheme.LabelSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/hint_christmas_subsidiary"
+                            android:textColor="@color/grey_dark"
+                            android:textSize="@dimen/text_size_small"
+                            app:fontFamily="@font/opensans_semibold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutCompany"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_left_button"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/spinnerCompany"
+                            style="@style/Widget.AppCompat.Spinner.Underlined"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/select_array"
+                            android:theme="@style/ThemeSpinner" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/labelCompany"
+                            style="@style/AppTheme.LabelSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/hint_christmas_company"
+                            android:textColor="@color/grey_dark"
+                            android:textSize="@dimen/text_size_small"
+                            app:fontFamily="@font/opensans_semibold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/alterAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_school_card"
+            android:background="@drawable/round_school_card_shadow"
+            android:elevation="@dimen/elevation"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_school_card_top"
+            tools:targetApi="lollipop">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_school_card_shadow"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radio_new_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Informar endereço para entrega"
+                            android:textAllCaps="false"
+                            android:textColor="@color/grey_dark"
+                            android:theme="@style/ThemeText"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/readAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="@dimen/margin_school_card_left_name"
+                            android:layout_marginRight="10dp"
+                            android:gravity="right"
+                            android:text="@string/read_more"
+                            android:textColor="@color/blueHeader"
+                            app:fontFamily="@font/opensans_semibold" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view_separator_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/grey_border"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/lblDescriptionAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_left_button"
+                        android:text="@string/christmas_alter_address_desc"
+                        android:textColor="@color/grey_dark"
+                        android:textSize="@dimen/text_size"
+                        app:fontFamily="@font/opensansregular" />
+
+                    <LinearLayout
+                        android:id="@+id/AddressLayout"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="4"
+                            android:orientation="horizontal"
+                            android:textColorHint="@color/grey_dark"
+                            android:textSize="@dimen/text_size_medium">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/hint_number"
+                                android:textColorHint="@color/grey_dark"
+                                android:layout_weight="1">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/number_edit_text"
+                                    android:inputType="number"
+                                    android:textColor="@color/black"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:fontFamily="@font/opensans_semibold"
+                                    android:textSize="@dimen/text_size_medium" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/hint_complement"
+                                android:textColorHint="@color/grey_dark"
+                                android:textSize="@dimen/text_size_medium"
+                                android:layout_weight="3">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/complement_edit_text"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:fontFamily="@font/opensans_semibold"
+                                    android:textSize="@dimen/text_size_medium" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="4"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/hint_uf"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/text_size_medium">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/uf_edit_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:enabled="false"
+                                    android:focusable="false"
+                                    android:inputType="none"
+                                    android:textSize="@dimen/text_size_medium"
+                                    app:fontFamily="@font/opensans_semibold" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/hint_city"
+                                android:layout_weight="3"
+                                android:textSize="@dimen/text_size_medium">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/city_edit_text"
+                                    android:enabled="false"
+                                    android:focusable="false"
+                                    android:inputType="none"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/text_size_medium"
+                                    app:fontFamily="@font/opensans_semibold" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_public_place"
+                            android:textSize="@dimen/text_size_medium">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/street_edit_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:enabled="false"
+                                android:focusable="false"
+                                android:inputType="none"
+                                android:textSize="@dimen/text_size_medium"
+                                app:fontFamily="@font/opensans_semibold" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_CEP"
+                            android:textColorHint="@color/grey_dark"
+                            android:textSize="@dimen/text_size_medium">
+
+                            <br.com.avanade.fahz.controls.ZipEditText
+                                android:id="@+id/zip_edit_Text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_medium"
+                                app:fontFamily="@font/opensans_semibold" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_country"
+                            android:textColorHint="@color/grey_dark"
+                            android:textSize="@dimen/text_size_medium">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/country_edit_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:enabled="false"
+                                android:focusable="false"
+                                android:inputType="none"
+                                android:maxLength="2"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_medium"
+                                app:fontFamily="@font/opensans_semibold" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_neighborhood"
+                            android:textSize="@dimen/text_size_medium">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/district_edit_text"
+                                android:enabled="false"
+                                android:focusable="false"
+                                android:inputType="none"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_medium"
+                                app:fontFamily="@font/opensans_semibold" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="@dimen/top_margin"
+            android:background="@drawable/custom_button_enter"
+            android:paddingLeft="@dimen/padding_left_button"
+            android:paddingRight="@dimen/padding_right_button"
+            android:text="@string/button_save"
+            android:enabled="false"
+            android:textColor="@color/white_text"
+            app:fontFamily="@font/opensansregular" />
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutNoInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/top_margin"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/lblNoInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/christmas_margin_right"
+                android:gravity="left"
+                android:paddingLeft="@dimen/school_padding"
+                android:textColor="@color/grey_dark"
+                android:theme="@style/ThemeText" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuGroupLinear"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="290dp"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/elevation"
+    android:background="@drawable/round_card_shadow"
+    tools:targetApi="lollipop"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginRight="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        android:background="@drawable/round_card_header_shadow">
+
+        <TextView
+            android:id="@+id/type_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Titular"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            app:fontFamily="@font/opensansregular"
+            android:textColor="@color/white01"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:background="@drawable/round_card_shadow">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/name_edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Titular"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                app:fontFamily="@font/opensans_bold"
+                android:textColor="@color/white01"/>
+            <TextView
+                android:id="@+id/operator_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Operadora"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                app:fontFamily="@font/opensansregular"
+                android:textColor="@color/white01"/>
+            <TextView
+                android:id="@+id/operator_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SulAmérica Saúde"
+                android:layout_marginLeft="15dp"
+                app:fontFamily="@font/opensans_bold"
+                android:textColor="@color/white01"/>
+
+            <TextView
+                android:id="@+id/type_plan_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo de Plano"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                app:fontFamily="@font/opensansregular"
+                android:textColor="@color/white01"/>
+            <TextView
+                android:id="@+id/type_plan_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vita Plus"
+                android:layout_marginLeft="15dp"
+                app:fontFamily="@font/opensans_bold"
+                android:textColor="@color/white01"/>
+
+            <TextView
+                android:id="@+id/number_card_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Número da Carteirinha"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                app:fontFamily="@font/opensansregular"
+                android:textColor="@color/white01"/>
+            <TextView
+                android:id="@+id/number_card_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="99999999999-000"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp"
+                app:fontFamily="@font/opensans_bold"
+                android:textColor="@color/white01"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+

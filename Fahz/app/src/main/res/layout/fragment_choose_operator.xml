@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundDefault">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_operator"
+        android:textSize="@dimen/text_size"
+        app:fontFamily="@font/opensansregular"
+        android:textColor="@color/grey_dark"
+        android:layout_marginTop="@dimen/margin_top_operator"
+        android:layout_marginLeft="@dimen/margin_left_operator"/>
+    <TextView
+        android:id="@+id/lblOperatorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title_1_size"
+        app:fontFamily="@font/opensans_bold"
+        android:textColor="@color/blueHeader"
+        android:layout_marginLeft="@dimen/margin_left_operator"
+        />
+
+    <TextView
+        android:id="@+id/explain_choose_operator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/another_operator_description"
+        android:textSize="@dimen/text_size"
+        app:fontFamily="@font/opensansregular"
+        android:textColor="@color/grey_dark"
+        android:layout_marginTop="@dimen/top_margin"
+        android:layout_marginBottom="@dimen/top_margin"
+        android:layout_marginLeft="@dimen/margin_left_operator"/>
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/linear_user">
+
+        <View android:id="@+id/rectangle_new"
+            android:layout_width="5dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/blueHeader"
+            android:visibility="visible"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_operator"
+            android:textStyle="bold"
+            app:fontFamily="@font/opensans_bold"
+            android:layout_marginLeft="@dimen/nav_spacing"
+            android:textSize="@dimen/text_size"
+            android:layout_gravity="center_vertical"
+            android:textAllCaps="true"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_operators"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        app:layout_constraintTop_toBottomOf="@id/header">
+    <ExpandableListView
+        android:id="@+id/simpleExpandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="1"
+        android:divider="@color/grey_dark"
+        android:dividerHeight="1dp"
+        android:groupIndicator="@null"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+</RelativeLayout>

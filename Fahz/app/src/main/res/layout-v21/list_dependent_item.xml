@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuGroupLinear"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/elevation"
+    android:background="@drawable/round_back_item_dependent_shadow"
+    android:layout_marginBottom="@dimen/margin_bottom_list_dependent"
+    tools:targetApi="lollipop">
+
+    <View android:id="@+id/rectangle_new"
+        android:layout_width="10dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/blueHeader"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_dependent_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:text="Dependente 1"
+                android:textColor="@color/black"
+                app:fontFamily="@font/opensansregular"/>
+
+            <TextView
+                android:id="@+id/active_status_dependent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="@dimen/request_padding_text"
+                android:paddingRight="@dimen/request_padding_text"
+                android:layout_marginLeft="@dimen/message_margin_left"
+                android:text="@string/active_dependente"
+                style="@style/ThemeDependentActive"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/pending_status_dependent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="@dimen/request_padding_text"
+                android:paddingRight="@dimen/request_padding_text"
+                android:layout_marginLeft="@dimen/message_margin_left"
+                android:text="@string/pending_dependente"
+                style="@style/ThemeDependentPendent"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/activeDependentes"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginRight="@dimen/margin_bottom_shadow"
+            android:layout_marginBottom="@dimen/margin_right_shadow"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white03"
+            android:visibility="gone">
+
+
+            <ImageButton
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_dep_edit"
+                android:background="@drawable/round_green_button"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"/>
+            <ImageButton
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_remove"
+                android:background="@drawable/round_red_button"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/inactiveDependentes"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginRight="@dimen/margin_bottom_shadow"
+            android:layout_marginBottom="@dimen/margin_right_shadow"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white03"
+            android:weightSum="2">
+
+
+            <ImageButton
+                android:id="@+id/btnView"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_visualize"
+                android:background="@drawable/round_gray_button"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"/>
+
+            <Button
+                android:id="@+id/btnReactivate"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:text="@string/reactivate_dependent"
+                android:background="@drawable/round_blue_button"
+                android:layout_margin="10dp"
+                android:textAllCaps="true"
+                android:textColor="@color/white04"
+                app:fontFamily="@font/opensansregular"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragments.anamnesis.SupplementaryDataFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtHeightData"
+            style="@style/BeneficiaryData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:hint="@string/sua_altura"
+            android:inputType="numberDecimal"
+            app:layout_constraintTop_toBottomOf="@id/txtHeight"
+            android:importantForAutofill="no"
+            />
+
+        <EditText
+            android:id="@+id/edtWeightData"
+            style="@style/BeneficiaryData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:hint="@string/seu_peso"
+            android:inputType="numberDecimal"
+            app:layout_constraintTop_toBottomOf="@id/txtWeight"
+            android:importantForAutofill="no"
+            />
+
+        <EditText
+            android:id="@+id/edtReligionData"
+            style="@style/BeneficiaryData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:drawableRight="@drawable/ic_buscar"
+            android:focusable="false"
+            android:hint="@string/pesquisar_religiao"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/txtReligion"
+            tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+        <TextView
+            android:id="@+id/txtWeight"
+            style="@style/SectionTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/peso"
+            app:layout_constraintTop_toBottomOf="@id/edtHeightData" />
+
+        <TextView
+            android:id="@+id/txtHeight"
+            style="@style/SectionTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/altura"
+            app:layout_constraintTop_toBottomOf="@id/txtText" />
+
+        <TextView
+            android:id="@+id/txtBMI"
+            style="@style/SectionTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/imc"
+            app:layout_constraintTop_toBottomOf="@id/edtWeightData" />
+
+        <TextView
+            android:id="@+id/txtBMIData"
+            style="@style/BeneficiaryData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintTop_toBottomOf="@id/txtBMI"
+            tools:text="28,5 \u25CF Sobrepeso" />
+
+        <TextView
+            android:id="@+id/txtReligion"
+            style="@style/SectionTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/religiao"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/txtBMIData" />
+
+        <TextView
+            android:id="@+id/txtText"
+            style="@style/FinishText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/beneficiary_data_text"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

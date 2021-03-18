@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/content_usage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white01"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/grey_dark"
+            android:padding="15dp"
+            android:text="@string/header_extract"
+            android:textAllCaps="true"
+            android:textColor="@color/white01"
+            android:textSize="@dimen/text_size_small"
+            app:fontFamily="@font/opensans_bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/extract_initial_text"
+            android:layout_marginTop="@dimen/margin_school_card_top"
+            android:padding="@dimen/school_padding"
+            android:gravity="left"
+            android:textColor="@color/grey_dark"
+            android:theme="@style/ThemeText"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/descStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/extract_period_from"
+                android:clickable="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/text_size_medium"
+                app:fontFamily="@font/opensans_semibold">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/startdate_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:drawableEnd="@drawable/ic_calendar"
+                    android:drawableRight="@drawable/ic_calendar"
+                    android:textColor="@color/grey_light_text"
+                    android:textSize="@dimen/text_size_medium"
+                    app:fontFamily="@font/opensans_semibold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/descEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/extract_period_to"
+                android:clickable="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/text_size_medium"
+                app:fontFamily="@font/opensans_semibold">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/enddate_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/ic_calendar"
+                    android:drawableRight="@drawable/ic_calendar"
+                    android:textColor="@color/grey_light_text"
+                    android:textSize="@dimen/text_size_medium"
+                    app:fontFamily="@font/opensans_semibold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_label_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/names_extract_spinner"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:entries="@array/select_array"
+            android:paddingLeft="-10dp"
+            android:theme="@style/ThemeSpinner" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/names_extract_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/extract_period_name"
+            android:textSize="@dimen/text_size_small"
+            app:fontFamily="@font/opensans_semibold"
+            style="@style/AppTheme.LabelSpinner"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/grey_dark" />
+
+
+        <LinearLayout
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="@drawable/custom_button_enter"
+                android:paddingLeft="@dimen/padding_left_button"
+                android:paddingRight="@dimen/padding_right_button"
+                android:text="@string/extract_search"
+                android:textColor="@color/white_text"
+                app:fontFamily="@font/opensansregular"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_documents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_title"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/rectangle_new"
+                android:layout_width="5dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/blueHeader"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/nav_spacing"
+                android:gravity="center_vertical"
+                android:text="@string/extract_title"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                app:fontFamily="@font/opensans_bold" />
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/linear_documents"
+            android:background="@color/grey_light" />
+
+        <LinearLayout
+            android:id="@+id/ll_usage_extract_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_medium_margin"
+            android:layout_marginBottom="@dimen/default_small_margin"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_small_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_grupo_familiar"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_total_family_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_small_margin"
+                    android:layout_marginLeft="@dimen/default_small_margin" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_small_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_coparticipacao"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_total_coparticipation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_small_margin"
+                    android:layout_marginLeft="@dimen/default_small_margin" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewUsage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+</ScrollView>

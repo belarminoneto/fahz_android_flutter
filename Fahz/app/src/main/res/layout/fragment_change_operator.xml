@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/change_operator_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundDefault"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/grey_dark"
+            android:padding="15dp"
+            android:text="@string/title_change_operator"
+            android:textAllCaps="true"
+            android:textColor="@color/white01"
+            android:textSize="@dimen/text_size_small"
+            app:fontFamily="@font/opensans_bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_operator"
+            android:layout_marginTop="@dimen/margin_top_operator"
+            android:text="@string/your_operator"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/text_size"
+            app:fontFamily="@font/opensansregular" />
+
+        <TextView
+            android:id="@+id/lblOperatorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_operator"
+            android:textColor="@color/blueHeader"
+            android:textSize="@dimen/title_1_size"
+            app:fontFamily="@font/opensans_bold" />
+
+        <TextView
+            android:id="@+id/explain_choose_operator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/top_margin"
+            android:layout_marginLeft="@dimen/margin_left_operator"
+            android:layout_marginTop="@dimen/top_margin"
+            android:text="@string/another_operator_description"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/text_size"
+            app:fontFamily="@font/opensansregular" />
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/linear_user">
+
+            <View
+                android:id="@+id/rectangle_new"
+                android:layout_width="5dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/blueHeader"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/nav_spacing"
+                android:text="@string/label_operator"
+                android:textColor="@color/blueHeader"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold"
+                app:fontFamily="@font/opensans_bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/list_operators"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            app:layout_constraintTop_toBottomOf="@id/header">
+
+            <ExpandableListView
+                android:id="@+id/simpleExpandableListView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:divider="@color/grey_border"
+                android:dividerHeight="1dp"
+                android:groupIndicator="@null" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/relative_layout_bottom_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:background="@color/blue_dark"
+            android:text="@string/confirm_modal"
+            android:textColor="@color/white_text" />
+
+    </LinearLayout>
+</RelativeLayout>

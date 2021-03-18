@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuGroupLinear"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_school_card"
+    android:background="@drawable/round_school_card_shadow"
+    android:elevation="@dimen/elevation"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_school_card_top"
+    tools:targetApi="lollipop">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_school_card_shadow"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox_choose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/type_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Titular"
+                    android:textAllCaps="true"
+                    android:textColor="@color/grey_dark"
+                    app:fontFamily="@font/opensans_bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/name_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_school_card_left_name"
+                    android:layout_marginRight="10dp"
+                    android:text="Edina dos passos"
+                    android:textColor="@color/blueHeader"
+                    app:fontFamily="@font/opensans_bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/read"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/margin_school_card_left_name"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="@string/read_more"
+                    android:textColor="@color/blueHeader"
+                    app:fontFamily="@font/opensans_semibold" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey_border"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/padding_left_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblCourse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/course_refund"
+                    android:textColor="@color/grey_dark"
+                    android:textSize="@dimen/text_size"
+                    app:fontFamily="@font/opensansregular" />
+
+                <TextView
+                    android:id="@+id/course_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lblcourse"
+                    android:textColor="@color/blueHeader"
+                    android:textSize="@dimen/text_size"
+                    app:fontFamily="@font/opensans_semibold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/padding_left_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblTypeScholarship"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/type_scholarship_refund"
+                    android:textColor="@color/grey_dark"
+                    android:textSize="@dimen/text_size"
+                    app:fontFamily="@font/opensansregular" />
+
+                <TextView
+                    android:id="@+id/type_scholarship_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lblcourse"
+                    android:textColor="@color/blueHeader"
+                    android:textSize="@dimen/text_size"
+                    app:fontFamily="@font/opensans_semibold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/padding_left_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblSchool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/school_refund"
+                    android:textColor="@color/grey_dark"
+                    android:textSize="@dimen/text_size"
+                    app:fontFamily="@font/opensansregular" />
+
+                <TextView
+                    android:id="@+id/school_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lblcourse"
+                    android:textColor="@color/blueHeader"
+                    android:textSize="@dimen/text_size"
+                    app:fontFamily="@font/opensans_semibold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/padding_left_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/lblStart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/start_refund"
+                        android:textColor="@color/grey_dark"
+                        android:textSize="@dimen/text_size"
+                        app:fontFamily="@font/opensansregular" />
+
+                    <TextView
+                        android:id="@+id/start_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lblcourse"
+                        android:textColor="@color/blueHeader"
+                        android:textSize="@dimen/text_size"
+                        app:fontFamily="@font/opensans_semibold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/padding"
+                    android:paddingLeft="@dimen/padding"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/lblEnd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/end_refund"
+                        android:textColor="@color/grey_dark"
+                        android:textSize="@dimen/text_size"
+                        app:fontFamily="@font/opensansregular" />
+
+                    <TextView
+                        android:id="@+id/end_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lblcourse"
+                        android:textColor="@color/blueHeader"
+                        android:textSize="@dimen/text_size"
+                        app:fontFamily="@font/opensans_semibold" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/padding_left_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/lblStartInformation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/top_margin"
+                    android:layout_marginBottom="@dimen/padding_image"
+                    android:text="@string/scholarship_refund_text_2"
+                    android:textColor="@color/grey_dark"
+                    android:textSize="@dimen/text_size"
+                    app:fontFamily="@font/opensansregular" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/lblDocuments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin"
+                android:layout_marginBottom="@dimen/padding_image"
+                android:text="@string/documents"
+                android:layout_marginLeft="@dimen/padding_left_button"
+                android:textColor="@color/grey_dark"
+                android:textSize="@dimen/text_size"
+                app:fontFamily="@font/opensansregular" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/documentRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/top_margin" />
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewFinancialItem"
+                android:layout_width="match_parent"
+                android:layout_height="270sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+

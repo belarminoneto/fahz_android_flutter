@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="80dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:weightSum="10"
+    android:id="@+id/document_container">
+
+    <ImageView
+        android:id="@+id/image_file"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_file"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/layout_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_below="@id/image_file"
+        android:layout_weight="8">
+
+        <TextView
+            android:id="@+id/text_name_document"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JPEG_20180925_160848271480766890--9889898898.jpg"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            app:fontFamily="@font/opensans_semibold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_date_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="08/06/2018"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        app:fontFamily="@font/opensansregular"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/button_delete_document"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_remove"
+        android:background="@color/red"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>

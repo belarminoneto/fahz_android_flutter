@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="55dp"
+    android:layout_height="90dp"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:id="@+id/line_top"
+        android:layout_width="5dp"
+        android:layout_height="50dp"
+        android:background="@color/green_steps"
+        app:layout_anchor="@+id/circle"
+        app:layout_anchorGravity="center|top" />
+
+    <ImageView
+        android:id="@+id/line_bottom"
+        android:layout_width="5dp"
+        android:layout_height="50dp"
+        android:background="@color/green_steps"
+        app:layout_anchor="@+id/circle"
+        app:layout_anchorGravity="bottom|center" />
+
+
+    <ImageView
+        android:id="@+id/line_center"
+        android:layout_width="5dp"
+        android:layout_height="38dp"
+        android:background="@color/green_steps"
+        app:layout_anchor="@+id/circle"
+        app:layout_anchorGravity="center" />
+
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/circle_shape" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

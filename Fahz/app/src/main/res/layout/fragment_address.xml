@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:background="@color/backgroundDefault"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_CEP"
+            android:textColorHint="@color/grey_dark"
+            android:textSize="@dimen/text_size_medium">
+
+            <br.com.avanade.fahz.controls.ZipEditText
+                android:id="@+id/zip_edit_Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_medium"
+                app:fontFamily="@font/opensans_semibold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_country"
+            android:textColorHint="@color/grey_dark"
+            android:textSize="@dimen/text_size_medium">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/country_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_medium"
+                app:fontFamily="@font/opensans_semibold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_public_place"
+            android:textSize="@dimen/text_size_medium">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/street_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:focusable="false"
+                android:inputType="none"
+                android:textSize="@dimen/text_size_medium"
+                app:fontFamily="@font/opensans_semibold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:textColorHint="@color/grey_dark"
+            android:textSize="@dimen/text_size_medium">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_number"
+                android:layout_weight="1"
+                android:textColorHint="@color/grey_dark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/number_edit_text"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_size_medium"
+                    android:singleLine="true"
+                    app:fontFamily="@font/opensans_semibold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_complement"
+                android:textColorHint="@color/grey_dark"
+                android:layout_weight="3"
+                android:textSize="@dimen/text_size_medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/complement_edit_text"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_size_medium"
+                    android:singleLine="true"
+                    app:fontFamily="@font/opensans_semibold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_uf"
+                android:textSize="@dimen/text_size_medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/uf_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:textSize="@dimen/text_size_medium"
+                    app:fontFamily="@font/opensans_semibold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:hint="@string/hint_city"
+                android:textSize="@dimen/text_size_medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/city_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:textSize="@dimen/text_size_medium"
+                    app:fontFamily="@font/opensans_semibold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_neighborhood"
+            android:textSize="@dimen/text_size_medium">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/district_edit_text"
+                android:enabled="false"
+                android:focusable="false"
+                android:inputType="none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_medium"
+                app:fontFamily="@font/opensans_semibold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

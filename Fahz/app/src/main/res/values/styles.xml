@@ -1,0 +1,289 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/opensansregular</item>
+        <item name="fontFamily">@font/opensansregular</item>
+        <item name="android:itemBackground">@color/grey_dark</item>
+        <item name="android:itemTextAppearance">@style/AppTheme.LabelSpinner</item>
+    </style>
+
+    <style name="AppBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/blueHeader</item>
+        <item name="colorPrimaryDark">@color/blueHeader</item>
+        <item name="colorAccent">@color/blueHeader</item>
+        <item name="android:textColor">@color/white_text</item>
+        <item name="android:fontFamily">@font/opensansregular</item>
+        <item name="fontFamily">@font/opensansregular</item>
+
+    </style>
+
+    <style name="AppTheme.LabelSpinner">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:fontFamily">@font/opensansregular</item>
+        <item name="fontFamily">@font/opensansregular</item>
+    </style>
+
+    <style name="AppTheme.LabelItem">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:fontFamily">@font/opensans_bold</item>
+        <item name="fontFamily">@font/opensans_bold</item>
+    </style>
+
+    <style name="AppTheme.Spinner" parent="Widget.AppCompat.Spinner.Underlined">
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:fontFamily">@font/opensansregular</item>
+        <item name="fontFamily">@font/opensansregular</item>
+        <item name="android:textColor">#ffa000</item>
+        <item name="android:textColorSecondary">#ffa000</item>
+    </style>
+
+    <style name="ThemeSpinner">
+        <!-- Color when pressed -->
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:fontFamily">@font/opensans_semibold</item>
+        <item name="fontFamily">@font/opensans_semibold</item>
+    </style>
+
+    <style name="ThemeText">
+        <!-- Color when pressed -->
+        <item name="android:textColor">@color/grey_text</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:fontFamily">@font/opensans_semibold</item>
+        <item name="fontFamily">@font/opensans_semibold</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ThemeQtdMenu">
+        <item name="android:background">@drawable/square_new_info</item>
+        <item name="android:textColor">@color/white_text</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="ThemeQtdMessage">
+        <item name="android:background">@drawable/round_qtd_message</item>
+        <item name="android:textColor">@color/white01</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensans_semibold</item>
+    </style>
+
+    <style name="MyTabLayoutTextAppearance12" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensans_semibold</item>
+    </style>
+
+
+    <style name="LabelQuestionaryDependent">
+        <item name="android:textColor">@color/grey_dark</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensans_semibold</item>
+    </style>
+
+
+    <style name="ThemeApprovedRequest">
+        <item name="android:background">@drawable/square_green_info_filled</item>
+        <item name="android:textColor">@color/white_text</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensans_semibold</item>
+    </style>
+
+    <style name="ThemePendingRequest">
+        <item name="android:background">@drawable/square_yellow_info_filled</item>
+        <item name="android:textColor">@color/white_text</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensans_semibold</item>
+    </style>
+
+    <style name="ThemeDisapprovedTheme">
+        <item name="android:background">@drawable/square_red_info</item>
+        <item name="android:textColor">@color/white_text</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensans_semibold</item>
+    </style>
+
+    <style name="ThemeDependentActive">
+        <item name="android:background">@drawable/square_green_info</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensans_semibold</item>
+    </style>
+
+    <style name="ThemeDependentPendent">
+        <item name="android:background">@drawable/square_yellow_info</item>
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensans_semibold</item>
+    </style>
+
+    <style name="ThemeBlue">
+        <item name="android:background">@drawable/square_blue_info</item>
+        <item name="android:textColor">@color/white01</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensans_semibold</item>
+    </style>
+
+    <style name="ActivateHint" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/grey_dark</item>
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensans_semibold</item>
+    </style>
+
+    <style name="DesactivateHint" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/grey_light_text</item>
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensans_semibold</item>
+    </style>
+
+    <style name="ThemeDeactivateSpinner">
+        <!-- Color when pressed -->
+        <item name="android:textColor">@color/grey_light_text</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensans_semibold</item>
+    </style>
+
+    <style name="TitleQuestionnaire">
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensans_bold</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:lineSpacingMultiplier">1.17</item>
+    </style>
+
+    <style name="TitleQuestionnaireHTML">
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensansregular</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:lineSpacingMultiplier">1.17</item>
+    </style>
+
+    <style name="TextQuestion">
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensansregular</item>
+        <item name="android:textColor">@color/grey_dark</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:lineSpacingMultiplier">1.20</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="NameLife">
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensansregular</item>
+        <item name="android:textColor">@color/grey_dark</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="RequiredAnswer">
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensansregular</item>
+        <item name="android:textColor">@color/red_info</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="FinishText">
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensansregular</item>
+        <item name="android:textColor">@color/grey_dark</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="BeneficiaryData">
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensansregular</item>
+        <item name="android:textColor">@color/grey_dark</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="SectionTitle">
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensans_bold</item>
+        <item name="android:textColor">@color/grey_dark</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SubTitleQuestionnaire">
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensans_bold</item>
+        <item name="android:textColor">@color/grey_disabled_text</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="typeLife">
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensans_bold</item>
+        <item name="android:textColor">@color/grey_light_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="infoLife">
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensansregular</item>
+        <item name="android:textColor">@color/grey_light_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="answers">
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensans_bold</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="NameFamilyTree">
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensansregular</item>
+        <item name="android:textColor">@color/blue_light</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="DivisorViewAnswers">
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensans_bold</item>
+        <item name="android:textColor">@color/blue_light</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="FinishQuestionnaireTitle">
+        <item name="android:fontFamily" tools:targetApi="16">@font/opensans_bold</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Clickable">
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="DateDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

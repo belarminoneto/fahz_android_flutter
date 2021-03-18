@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white01"
+        android:id="@+id/document_container"
+        tools:context=".activities.DocumentsActivity">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_dark"
+            android:padding="15dp"
+            android:text="@string/text_filter_document"
+        android:textAllCaps="true"
+        android:textColor="@color/white01"
+        app:fontFamily="@font/opensans_bold"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/text_size_small"/>
+
+    <LinearLayout
+        android:id="@+id/linear_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_below="@id/text_title">
+
+        <TextView
+            android:id="@+id/lbName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_name"
+            android:textStyle="bold"
+            app:fontFamily="@font/opensans_bold"
+            android:paddingLeft="3dp"/>
+
+        <Spinner
+            android:id="@+id/user_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:theme="@style/ThemeSpinner"/>
+
+        <TextView
+            android:id="@+id/lbBenefit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_benefit"
+            android:textStyle="bold"
+            android:paddingLeft="3dp"
+            app:fontFamily="@font/opensans_bold"/>
+
+        <Spinner
+            android:id="@+id/benefit_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:theme="@style/ThemeSpinner"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/header_document"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linear_user">
+
+        <View android:id="@+id/rectangle_new"
+            android:layout_width="5dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/blueHeader"
+            android:visibility="visible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_document"
+            android:textStyle="bold"
+            app:fontFamily="@font/opensans_bold"
+            android:layout_marginTop="@dimen/nav_spacing"
+            android:layout_marginLeft="@dimen/nav_spacing"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="true"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/addDocument"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/nav_spacing"
+            android:layout_marginRight="@dimen/nav_spacing"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_plus_dark"
+            android:contentDescription="Adicionar"/>
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBarDocuments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_document" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_save"
+            android:textColor="@color/white_text"
+            android:background="@color/blue_dark"
+            android:layout_alignParentBottom="true" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewDocumentTypes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/save_button"
+            android:layout_below="@id/header_document" />
+
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

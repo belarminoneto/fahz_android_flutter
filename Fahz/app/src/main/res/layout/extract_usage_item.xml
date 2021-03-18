@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/extract_margin_left"
+        android:text="@string/extract_procedure"
+        android:textColor="@color/grey_dark"
+        android:textSize="@dimen/text_size"
+        app:fontFamily="@font/opensansregular" />
+
+    <TextView
+        android:id="@+id/procedure_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/extract_procedure"
+        android:textColor="@color/blueHeader"
+        android:textSize="@dimen/text_size_small"
+        app:fontFamily="@font/opensans_semibold"
+        android:layout_marginLeft="@dimen/extract_margin_left"
+        android:layout_marginBottom="@dimen/extract_bottom"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/extract_bottom">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/extract_margin_left"
+            android:text="@string/extract_value"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/text_size"
+            app:fontFamily="@font/opensansregular" />
+
+        <TextView
+            android:id="@+id/value_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/extract_value"
+            android:textColor="@color/blueHeader"
+            android:textSize="@dimen/text_size_small"
+            app:fontFamily="@font/opensans_semibold"
+            android:layout_marginLeft="@dimen/extract_margin_left"/>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/extract_bottom">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/extract_margin_left"
+            android:text="@string/extract_participation"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/text_size"
+            app:fontFamily="@font/opensansregular" />
+
+        <TextView
+            android:id="@+id/covalue_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/extract_participation"
+            android:textColor="@color/blueHeader"
+            android:textSize="@dimen/text_size_small"
+            app:fontFamily="@font/opensans_semibold"
+            android:layout_marginLeft="@dimen/extract_margin_left"/>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="@dimen/extract_bottom">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/extract_margin_left"
+            android:text="@string/extract_date_schedule"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/text_size"
+            app:fontFamily="@font/opensansregular" />
+
+        <TextView
+            android:id="@+id/extract_date_schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/extract_participation"
+            android:textColor="@color/blueHeader"
+            android:textSize="@dimen/text_size_small"
+            app:fontFamily="@font/opensans_semibold"
+            android:layout_marginLeft="@dimen/extract_margin_left"/>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/extract_margin_left"
+            android:text="@string/extract_date_schedule"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/text_size"
+            app:fontFamily="@font/opensansregular" />
+
+        <TextView
+            android:id="@+id/extract_date_schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/extract_participation"
+            android:textColor="@color/blueHeader"
+            android:textSize="@dimen/text_size_small"
+            app:fontFamily="@font/opensans_semibold"
+            android:layout_marginLeft="@dimen/extract_margin_left"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_separator_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey_dark"
+        android:visibility="visible" />
+
+
+</LinearLayout>

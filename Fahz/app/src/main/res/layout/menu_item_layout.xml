@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/menu_light">
+
+
+    <View android:id="@+id/rectangle_new"
+        android:layout_width="5dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white_text"
+        android:visibility="visible"/>
+    <TextView
+        android:id="@+id/text_list_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:paddingTop="@dimen/nav_spacing"
+        android:paddingBottom="@dimen/nav_spacing"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+        android:paddingStart="?android:attr/expandableListPreferredChildPaddingLeft"
+        app:fontFamily="@font/opensansregular"
+        tool:text="@string/user_name"
+        android:textColor="@color/white_text"/>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <ImageView
+        android:id="@+id/arrow_down"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/arrow_down_white"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/nav_spacing"
+        android:layout_marginRight="@dimen/nav_spacing"/>
+
+
+</LinearLayout>

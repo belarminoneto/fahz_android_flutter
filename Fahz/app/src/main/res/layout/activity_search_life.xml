@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.anamnesis.SearchLifeActivity">
+
+    <EditText
+        android:id="@+id/edtFilter"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:hint="@string/pesquisar_beneficiarios"
+        android:inputType="text"
+        android:paddingLeft="50dp"
+        android:paddingRight="12dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,RtlHardcoded,RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/imgBack"
+        style="@style/Clickable"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:padding="14dp"
+        app:layout_constraintBottom_toBottomOf="@id/edtFilter"
+        app:layout_constraintStart_toStartOf="@id/edtFilter"
+        app:layout_constraintTop_toTopOf="@id/edtFilter"
+        app:srcCompat="@drawable/ic_voltar"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/edtFilter" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        style="@style/SectionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/beneficiarios"
+        app:layout_constraintTop_toBottomOf="@id/edtFilter" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvLife"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

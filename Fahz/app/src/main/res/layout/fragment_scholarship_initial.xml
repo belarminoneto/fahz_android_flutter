@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundDefault"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_layout_scholarship">
+
+        <TextView
+            android:id="@+id/lblOperatorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/congrats"
+            android:textColor="@color/blueHeader"
+            android:textSize="@dimen/title_1_size"
+            app:fontFamily="@font/opensans_bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/top_margin"
+            android:layout_marginTop="@dimen/top_margin"
+            android:text="@string/scholarship_initial_1"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/text_size"
+            app:fontFamily="@font/opensansregular" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scholarship_initial_2"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/text_size"
+            app:fontFamily="@font/opensansregular" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/top_margin"
+            android:layout_marginTop="@dimen/margin_top_operator"
+            android:text="@string/lblcourse"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/text_size"
+            app:fontFamily="@font/opensansregular" />
+
+        <TextView
+            android:id="@+id/course_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblcourse"
+            android:textColor="@color/blueHeader"
+            android:textSize="@dimen/text_size"
+            app:fontFamily="@font/opensans_semibold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/top_margin"
+            android:layout_marginTop="@dimen/top_margin"
+            android:text="@string/lblScholarship_type"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/text_size"
+            app:fontFamily="@font/opensansregular" />
+
+
+        <TextView
+            android:id="@+id/scholarship_type_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblcourse"
+            android:textColor="@color/blueHeader"
+            android:textSize="@dimen/text_size"
+            app:fontFamily="@font/opensans_semibold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/top_margin"
+            android:layout_marginTop="@dimen/top_margin"
+            android:text="@string/lblSchool"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/text_size"
+            app:fontFamily="@font/opensansregular" />
+
+
+        <TextView
+            android:id="@+id/school_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblcourse"
+            android:textColor="@color/blueHeader"
+            android:textSize="@dimen/text_size"
+            app:fontFamily="@font/opensans_semibold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/top_margin"
+            android:layout_marginTop="@dimen/top_margin"
+            android:text="@string/lblEvaluation"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/text_size"
+            app:fontFamily="@font/opensansregular" />
+
+
+        <TextView
+            android:id="@+id/evaluation_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblcourse"
+            android:textColor="@color/blueHeader"
+            android:textSize="@dimen/text_size"
+            app:fontFamily="@font/opensans_semibold" />
+
+
+        <LinearLayout
+            android:id="@+id/containerStudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_margin"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/top_margin"
+                android:text="@string/lblStuding"
+                android:textColor="@color/grey_dark"
+                android:textSize="@dimen/text_size"
+                app:fontFamily="@font/opensansregular" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/AppTheme.LabelSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_right_switch"
+                android:text="@string/no"
+                android:textAllCaps="true"
+                android:theme="@style/LabelQuestionaryDependent" />
+
+            <Switch
+                android:id="@+id/switch_already_studding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/AppTheme.LabelSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+                android:textAllCaps="true"
+                android:theme="@style/LabelQuestionaryDependent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_margin"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/top_margin"
+                android:text="@string/lblFinancing"
+                android:textColor="@color/grey_dark"
+                android:textSize="@dimen/text_size"
+                app:fontFamily="@font/opensansregular" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/AppTheme.LabelSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_right_switch"
+                android:text="@string/no"
+                android:textAllCaps="true"
+                android:theme="@style/LabelQuestionaryDependent" />
+
+            <Switch
+                android:id="@+id/switch_financing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/AppTheme.LabelSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+                android:textAllCaps="true"
+                android:theme="@style/LabelQuestionaryDependent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblSchooling"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/text_size"
+            app:fontFamily="@font/opensansregular" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/schooling_spinner"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:entries="@array/select_array"
+            android:paddingLeft="-10dp"
+            android:theme="@style/ThemeSpinner" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-3dp"
+            android:layout_marginTop="@dimen/top_margin"
+            android:hint="@string/lblCity"
+            android:textColorHint="@color/grey_dark"
+            android:textSize="@dimen/text_size_medium">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/city_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_medium"
+                app:fontFamily="@font/opensans_semibold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-3dp"
+            android:layout_marginTop="@dimen/top_margin"
+            android:hint="@string/lblPeriod"
+            android:textColorHint="@color/grey_dark"
+            android:textSize="@dimen/text_size_medium">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/period_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_medium"
+                app:fontFamily="@font/opensans_semibold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-3dp"
+            android:layout_marginTop="@dimen/top_margin"
+            android:hint="@string/lblStart"
+            android:textColorHint="@color/grey_dark"
+            android:textSize="@dimen/text_size_medium">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/start_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:drawableRight="@drawable/ic_calendar"
+                android:inputType="date"
+                android:textSize="@dimen/text_size_medium"
+                app:fontFamily="@font/opensans_semibold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-3dp"
+            android:layout_marginTop="@dimen/top_margin"
+            android:hint="@string/lblEnd"
+            android:textColorHint="@color/grey_dark"
+            android:textSize="@dimen/text_size_medium">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/end_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:drawableRight="@drawable/ic_calendar"
+                android:inputType="date"
+                android:textSize="@dimen/text_size_medium"
+                app:fontFamily="@font/opensans_semibold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/totalValueLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/total_value"
+            android:layout_marginLeft="-3dp"
+            android:textColorHint="@color/grey_dark"
+            android:textSize="@dimen/text_size_small">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/total_value"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/opensans_semibold"
+                android:textSize="@dimen/text_size_medium"
+                android:inputType="numberDecimal"
+                android:digits="0123456789.," />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuGroupLinear"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_school_card"
+    android:background="@drawable/round_school_card_shadow"
+    android:elevation="@dimen/elevation"
+    android:orientation="vertical"
+    tools:targetApi="lollipop"
+    android:padding="@dimen/margin_school_card_top">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_school_card_shadow"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox_choose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/type_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Titular"
+                    android:textAllCaps="true"
+                    android:textColor="@color/grey_dark"
+                    app:fontFamily="@font/opensans_bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/name_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_school_card_left_name"
+                    android:layout_marginRight="10dp"
+                    android:text="Edina dos passos"
+                    android:textColor="@color/blueHeader"
+                    android:layout_gravity="center_vertical"
+                    app:fontFamily="@font/opensans_bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/status_eligible"
+                    style="@style/ThemeDisapprovedTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_school_card_left_name"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/margin_school_card_top"
+                    android:text="@string/cannot_request"
+                    android:textSize="@dimen/text_size_small"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/read"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/margin_school_card_left_name"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="@string/read_more"
+                    android:textColor="@color/blueHeader"
+                    app:fontFamily="@font/opensans_semibold" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey_border"
+                android:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/schooling_spinner"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_school_card"
+                android:layout_marginRight="@dimen/margin_school_card"
+                android:textSize="@dimen/text_size_small"
+                android:theme="@style/ThemeSpinner"
+                android:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/choose_schooling"
+                style="@style/AppTheme.LabelSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_school_card"
+                android:text="@string/choose_schooling"
+                android:textColor="@color/grey_dark"
+                android:textSize="@dimen/text_size_small"
+                android:visibility="visible"
+                app:fontFamily="@font/opensans_semibold" />
+
+            <View
+                android:id="@+id/view_separator_2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey_border"
+                android:visibility="visible" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewDocumentTypes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_separator_2"
+                android:layout_above="@id/view_separator_3" />
+
+            <View
+                android:id="@+id/view_separator_3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey_border"
+                android:visibility="visible" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/totalValueLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/total_value"
+                android:textColorHint="@color/grey_dark"
+                android:textSize="@dimen/text_size_small">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/total_value"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:fontFamily="@font/opensans_semibold"
+                    android:textSize="@dimen/text_size_medium"
+                    android:inputType="numberDecimal"
+                    android:digits="0123456789.," />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+

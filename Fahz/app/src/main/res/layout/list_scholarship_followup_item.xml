@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuGroupLinear"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_school_card"
+    android:background="@drawable/round_school_card_shadow"
+    android:elevation="@dimen/elevation"
+    android:orientation="vertical"
+    tools:targetApi="lollipop"
+    android:padding="@dimen/margin_school_card_top">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_school_card_shadow"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox_choose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/type_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Titular"
+                    android:textAllCaps="true"
+                    android:textColor="@color/grey_dark"
+                    app:fontFamily="@font/opensans_bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/name_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_school_card_left_name"
+                    android:layout_marginRight="10dp"
+                    android:text="Edina dos passos"
+                    android:textColor="@color/blueHeader"
+                    android:layout_gravity="center_vertical"
+                    app:fontFamily="@font/opensans_bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/read"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/margin_school_card_left_name"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="@string/read_more"
+                    android:textColor="@color/blueHeader"
+                    app:fontFamily="@font/opensans_semibold" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_separator_2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey_border"
+                android:visibility="visible" />
+
+            <LinearLayout
+            android:layout_marginLeft="@dimen/padding_left_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/course_refund"
+                android:textColor="@color/grey_dark"
+                android:textSize="@dimen/text_size"
+                app:fontFamily="@font/opensansregular" />
+
+            <TextView
+                android:id="@+id/course_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblcourse"
+                android:textColor="@color/blueHeader"
+                android:textSize="@dimen/text_size"
+                app:fontFamily="@font/opensans_semibold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/padding_left_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblTypeScholarship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type_scholarship_refund"
+                android:textColor="@color/grey_dark"
+                android:textSize="@dimen/text_size"
+                app:fontFamily="@font/opensansregular" />
+
+            <TextView
+                android:id="@+id/type_scholarship_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblcourse"
+                android:textColor="@color/blueHeader"
+                android:textSize="@dimen/text_size"
+                app:fontFamily="@font/opensans_semibold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/padding_left_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblSchool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/school_refund"
+                android:textColor="@color/grey_dark"
+                android:textSize="@dimen/text_size"
+                app:fontFamily="@font/opensansregular" />
+
+            <TextView
+                android:id="@+id/school_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblcourse"
+                android:textColor="@color/blueHeader"
+                android:textSize="@dimen/text_size"
+                app:fontFamily="@font/opensans_semibold" />
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="@dimen/padding_left_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/date_text_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_date"
+                app:fontFamily="@font/opensansregular">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/date_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_calendar"
+                    android:drawableRight="@drawable/ic_calendar"
+                    android:inputType="date"
+                    android:textSize="@dimen/text_size_medium"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    app:fontFamily="@font/opensans_semibold" />
+            </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+            android:layout_marginLeft="@dimen/padding_left_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/lblInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scholarship_send_followup_2"
+                android:textColor="@color/grey_dark"
+                android:textSize="@dimen/text_size"
+                app:fontFamily="@font/opensansregular"
+                android:layout_marginBottom="@dimen/top_margin"/>
+        </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewDocument"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_separator_2" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+

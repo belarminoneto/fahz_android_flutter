@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/content_terms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white01"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_dark"
+            android:padding="15dp"
+            android:text="@string/title_term_of_use"
+        android:textAllCaps="true"
+        android:textColor="@color/white01"
+        android:textSize="@dimen/text_size_small"
+        app:fontFamily="@font/opensans_bold"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/padding_margin"
+            android:paddingLeft="@dimen/padding_margin"
+            android:layout_weight="3">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/term_spinner"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:entries="@array/select_array"
+                android:paddingLeft="-10dp"
+                android:theme="@style/ThemeSpinner" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/AppTheme.LabelSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hint_choose_term"
+                android:textColor="@color/grey_dark"
+                android:textSize="@dimen/text_size_small"
+                app:fontFamily="@font/opensans_semibold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/padding_margin"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/btnDownload"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circle_action_enable"
+                app:srcCompat="@drawable/ic_download"
+                android:layout_marginTop="@dimen/school_padding"
+                android:layout_marginLeft="@dimen/school_padding"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollViewTerm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_title"
+        android:layout_above="@id/relative_layout_bottom_content"
+        android:visibility="gone">
+        <LinearLayout
+            android:id="@+id/linear_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:layout_below="@id/text_title">
+
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/txtTermText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/terms" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageTerm"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/terms"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/padding_margin_img" />
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/txtSelectTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_term"
+            app:fontFamily="@font/opensans_bold"
+            android:textSize="@dimen/title_2_size"
+            android:padding="@dimen/padding_margin"
+            android:textColor="@color/blueHeader"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

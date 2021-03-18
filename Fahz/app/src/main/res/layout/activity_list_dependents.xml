@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/content_dependent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white01"
+        android:orientation="vertical"
+        tools:context=".activities.ListDependentsActivity">
+
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_dark"
+        android:padding="15dp"
+        android:text="@string/label_title_dependent"
+        android:textAllCaps="true"
+        android:textColor="@color/white01"
+        app:fontFamily="@font/opensans_bold"
+        android:textSize="@dimen/text_size_small"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/linear_documents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/text_title">
+
+        <View android:id="@+id/rectangle_new"
+            android:layout_width="5dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/blueHeader"
+            android:visibility="visible"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_dependents"
+            android:textStyle="bold"
+            app:fontFamily="@font/opensans_bold"
+            android:layout_marginLeft="@dimen/nav_spacing"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textAllCaps="true"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linear_filter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f7f8fa"
+        android:orientation="horizontal"
+        android:paddingLeft="6dp"
+        android:paddingStart="6dp"
+        android:weightSum="5"
+        app:layout_constraintTop_toBottomOf="@id/linear_documents">
+
+            <TextView
+                android:id="@+id/txtDocumentType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/label_name"
+                android:layout_weight="3"
+                android:layout_marginLeft="@dimen/left_margin_dependent"
+                app:fontFamily="@font/opensans_bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:layout_marginRight="@dimen/right_margin_dependent"
+            android:text="@string/label_action"
+            app:fontFamily="@font/opensans_bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/grey_light"
+        app:layout_constraintTop_toBottomOf="@id/linear_filter" />
+
+    <!--<ProgressBar-->
+        <!--android:id="@+id/progress_bar_test"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--android:layout_gravity="center"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/linear_filter"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/padding"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_weight = "1.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="5"
+            android:layout_marginLeft="@dimen/padding_layout_personal_data"
+            android:layout_marginRight="@dimen/padding_layout_personal_data">
+
+            <Button
+                android:id="@+id/btnNewDependent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_new_dependent"
+                android:background="@drawable/custom_button_dash"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textColor="@color/blue_text"
+                app:fontFamily="@font/opensansregular"
+                android:paddingLeft="@dimen/padding_left_button"
+                android:paddingRight="@dimen/padding_right_button"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/padding_layout_personal_data"
+                android:layout_weight="3"
+                android:textSize="@dimen/text_size_small"/>
+
+            <Button
+                android:id="@+id/btnInactivate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_inactive_dependent"
+                android:background="@drawable/custom_button_add"
+                android:textColor="@color/blue_text"
+                app:fontFamily="@font/opensansregular"
+                android:paddingLeft="@dimen/padding_left_button"
+                android:paddingRight="@dimen/padding_right_button"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                android:layout_weight="2"
+                android:textSize="@dimen/text_size_small"/>
+
+            <Button
+                android:id="@+id/btnActivate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_active_dependent"
+                android:background="@drawable/custom_button_enter"
+                android:textColor="@color/white04"
+                app:fontFamily="@font/opensansregular"
+                android:paddingLeft="@dimen/padding_left_button"
+                android:paddingRight="@dimen/padding_right_button"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewDependent"
+            android:layout_weight="8.5"
+            android:layout_height="0dp"
+            android:layout_width="match_parent" />
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

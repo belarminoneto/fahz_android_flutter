@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="10dp"
+    android:id="@+id/health_plan_container">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnIncludePlan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_inclusao_plano"
+                android:background="@drawable/circle_main_action"/>
+
+            <TextView
+                android:id="@+id/lblIncludePlan"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/top_margin"
+                android:lineSpacingExtra="4sp"
+                android:gravity="center_horizontal"
+                android:text="@string/include_plan"
+                app:fontFamily="@font/opensans_semibold"/>
+
+            <ImageButton
+                android:id="@+id/btnCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_consultar_carteira"
+                android:background="@drawable/circle_main_action"
+                android:layout_marginTop="@dimen/top_margin"/>
+
+            <TextView
+                android:id="@+id/lblCard"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="4sp"
+                android:layout_marginTop="@dimen/top_margin"
+                android:gravity="center_horizontal"
+                android:text="@string/check_card"
+                app:fontFamily="@font/opensans_semibold"/>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/btnRequestCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/top_margin"
+                    android:background="@drawable/circle_main_action"
+                    app:srcCompat="@drawable/ic_solicitar_carteira"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/lblRequestCard"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/top_margin"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="4sp"
+                    android:text="@string/request_new_card"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_small"
+                    app:fontFamily="@font/opensans_semibold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnRequestCard"/>
+
+                <TextView
+                    android:id="@+id/lblQtdNotification"
+                    style="@style/ThemeQtdMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/round_qtd_message"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_small"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="RtlHardcoded" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageButton
+                android:id="@+id/btnMedicalRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/top_margin"
+                android:background="@drawable/circle_main_action"
+                app:srcCompat="@drawable/ic_medical_record" />
+
+            <TextView
+                android:id="@+id/lblMedicalRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="4sp"
+                android:text="@string/medical_record"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_small"
+                app:fontFamily="@font/opensans_semibold" />
+
+            <ImageButton
+                android:id="@+id/btnAnamnesis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin"
+                android:background="@drawable/circle_main_action"
+                app:srcCompat="@drawable/ic_anamnese" />
+
+            <TextView
+                android:id="@+id/lblAnamnesis"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="4sp"
+                android:text="@string/anamnese"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_small"
+                app:fontFamily="@font/opensans_semibold" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnIncludeDep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_incluir_dep"
+                android:background="@drawable/circle_main_action"/>
+            <TextView
+                android:id="@+id/lblIncludeDep"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="4sp"
+                android:gravity="center_horizontal"
+                android:text="@string/include_dependent"
+                android:layout_marginTop="@dimen/top_margin"
+                app:fontFamily="@font/opensans_semibold"/>
+
+            <ImageButton
+                android:id="@+id/btnInactivateDep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_inativar_dep"
+                android:background="@drawable/circle_main_action"
+                android:layout_marginTop="@dimen/top_margin"/>
+            <TextView
+                android:id="@+id/lblInactivateDep"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="4sp"
+                android:gravity="center_horizontal"
+                android:text="@string/inactivate_dependent"
+                android:layout_marginTop="@dimen/top_margin"
+                app:fontFamily="@font/opensans_semibold"/>
+            <ImageButton
+                android:id="@+id/btnPregnantProgram"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/ic_pregnant"
+                android:background="#ffffff"
+                android:layout_marginTop="@dimen/top_margin"
+                android:visibility="gone"
+                android:contentDescription="TODO" />
+            <TextView
+                android:id="@+id/lblPregnant"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="4sp"
+                android:gravity="center_horizontal"
+                android:text="@string/pregnant_program"
+                android:layout_marginTop="@dimen/top_margin"
+                app:fontFamily="@font/opensans_semibold"
+                android:visibility="gone"/>
+
+
+            <ImageButton
+                android:id="@+id/btnExtractUse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_icon_files"
+                android:background="@drawable/circle_main_action"
+                android:layout_marginTop="@dimen/top_margin"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/lblExtractUse"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="4sp"
+                android:gravity="center_horizontal"
+                android:text="@string/extract_use"
+                android:layout_marginTop="@dimen/top_margin"
+
+                android:visibility="gone"
+                app:fontFamily="@font/opensans_semibold"/>
+
+
+            <ImageButton
+                android:id="@+id/btnTeleHealth"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/top_margin"
+                android:background="@drawable/circle_main_action"
+                app:srcCompat="@drawable/ic_telehealth" />
+
+            <TextView
+                android:id="@+id/lblTeleHealth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="4sp"
+                android:text="@string/telehealth"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_small"
+                app:fontFamily="@font/opensans_semibold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnAlterOperator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_alterar_op"
+                android:background="@drawable/circle_main_action"/>
+
+            <TextView
+                android:id="@+id/lblAlterOperator"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="4sp"
+                android:gravity="center_horizontal"
+                android:text="@string/change_operator"
+                android:layout_marginTop="@dimen/top_margin"
+                app:fontFamily="@font/opensans_semibold"/>
+
+            <ImageButton
+                android:id="@+id/btnCancelPlan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_cancelar_plano"
+                android:background="@drawable/circle_main_action"
+                android:layout_marginTop="@dimen/top_margin"/>
+
+            <TextView
+                android:id="@+id/lblCancelPlan"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="4sp"
+                android:gravity="center_horizontal"
+                android:text="@string/cancel_plan"
+                android:layout_marginTop="@dimen/top_margin"
+                app:fontFamily="@font/opensans_semibold"/>
+
+            <ImageButton
+                android:id="@+id/btnSchedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin"
+                android:background="@drawable/circle_main_action"
+                app:srcCompat="@drawable/icon_calendar" />
+
+            <TextView
+                android:id="@+id/lblSchedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="4sp"
+                android:text="@string/schedule_my_doctor_label"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_small"
+                app:fontFamily="@font/opensans_semibold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

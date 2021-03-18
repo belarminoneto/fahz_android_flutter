@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:background="@color/backgroundDefault"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/AppTheme.LabelSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_bank" />
+
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/bank_spinner"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/nationality_array"
+            android:textSize="@dimen/text_size_small"
+            android:theme="@style/ThemeSpinner"
+            app:fontFamily="@font/opensans_semibold" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/AppTheme.LabelSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/hint" />
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:hint="@string/hint_agency"
+                android:textColorHint="@color/grey_dark"
+                android:textSize="@dimen/text_size_medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/agency_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_medium"
+                    app:fontFamily="@font/opensans_semibold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_digit_agency"
+                android:textColorHint="@color/grey_dark"
+                android:textSize="@dimen/text_size_medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/agency_digit_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM"
+                    android:inputType="text"
+                    android:maxLength="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_medium"
+                    app:fontFamily="@font/opensans_semibold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_account"
+            android:layout_weight="3"
+            android:textColorHint="@color/grey_dark"
+            android:textSize="@dimen/text_size_medium">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/account_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/black"
+                app:fontFamily="@font/opensans_semibold"
+                android:textSize="@dimen/text_size_medium"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_digit_agency"
+            android:layout_weight="1"
+            android:textColorHint="@color/grey_dark"
+            android:textSize="@dimen/text_size_medium">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/account_digit_edit_text"
+                android:inputType="text"
+                android:digits="0123456789qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                app:fontFamily="@font/opensans_semibold"
+                android:textSize="@dimen/text_size_medium"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

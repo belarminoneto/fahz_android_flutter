@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/edit_dependent_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundDefault">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_dark"
+        android:padding="15dp"
+        android:text="@string/label_title_dependent_edit"
+        android:textAllCaps="true"
+        android:textColor="@color/white01"
+        app:fontFamily="@font/opensans_bold"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:textSize="@dimen/text_size_small"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cpf_text_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/hint_cpf"
+        app:layout_constraintTop_toBottomOf="@+id/text_title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cpf_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:inputType="numberDecimal"
+            android:maxLines="11" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/full_name_text_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/hint_full_name"
+        app:layout_constraintTop_toBottomOf="@+id/cpf_text_input">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/full_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mother_fullname_text_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/hint_full_name_mother"
+        app:layout_constraintTop_toBottomOf="@+id/full_name_text_input">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mother_fullname_edit_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/datebirth_text_input"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="@string/hint_date_of_birth"
+        android:orientation="vertical"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mother_fullname_text_input">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/datebirth_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:inputType="date"
+            android:maxLines="11" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/degree_kinship_spinner"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toBottomOf="@+id/datebirth_text_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/datebirth_text_input"
+        app:layout_constraintTop_toTopOf="@+id/datebirth_text_input" />
+
+    <Spinner
+        android:id="@+id/sex_spinner"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datebirth_text_input" />
+
+    <Spinner
+        android:id="@+id/civil_status_spinner"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toBottomOf="@+id/sex_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sex_spinner"
+        app:layout_constraintTop_toTopOf="@+id/sex_spinner" />
+
+    <Spinner
+        android:id="@+id/nationality_spinner"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/civil_status_spinner"/>
+
+    <Spinner
+        android:id="@+id/student_spinner"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/nationality_spinner"
+        app:layout_constraintStart_toEndOf="@+id/nationality_spinner"
+        app:layout_constraintTop_toBottomOf="@id/civil_status_spinner"/>
+
+    <Spinner
+        android:id="@+id/invalid_spinner"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_spinner" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/button_save"
+        android:textColor="@color/white_text"
+        android:background="@color/blue_dark"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

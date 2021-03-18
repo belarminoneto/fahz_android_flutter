@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Manter sempre os arrays de banco e de codigo de banco na mesma ordem -->
+    <string-array name="bank_array">
+        <item>Banco do Brasil</item>
+        <item>Santander</item>
+        <item>Bradesco</item>
+        <item>Itau</item>
+    </string-array>
+
+    <string-array name="bank_code_array">
+        <item>1</item>
+        <item>33</item>
+        <item>237</item>
+        <item>341</item>
+    </string-array>
+
+    <string-array name="uf_array">
+        <item>AC</item>
+        <item>AL</item>
+        <item>AP</item>
+        <item>AM</item>
+        <item>BA</item>
+        <item>CE</item>
+        <item>DF</item>
+        <item>ES</item>
+        <item>GO</item>
+        <item>MA</item>
+        <item>MT</item>
+        <item>MS</item>
+        <item>MG</item>
+        <item>PA</item>
+        <item>PB</item>
+        <item>PE</item>
+        <item>PI</item>
+        <item>RJ</item>
+        <item>RN</item>
+        <item>RS</item>
+        <item>RO</item>
+        <item>RR</item>
+        <item>SC</item>
+        <item>SP</item>
+        <item>SE</item>
+        <item>TO</item>
+    </string-array>
+
+    <string-array name="city">
+        <item>Recife</item>
+        <item>Brasília</item>
+    </string-array>
+
+    <string-array name="country">
+        <item>Brasil</item>
+        <item>Canadá</item>
+        <item>Portugal</item>
+        <item>Alemanha</item>
+    </string-array>
+
+</resources>

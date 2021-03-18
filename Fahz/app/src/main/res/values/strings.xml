@@ -1,0 +1,828 @@
+﻿<resources>
+    <string name="app_name">Conecta FAHZ</string>
+    <string name="logo">Fundação Zerrenner</string>
+    <string name="label_welcome">Bem vindo,</string>
+    <string name="label_type_it">Digite o CPF e senha para continuar</string>
+    <string name="label_welcome_first_access">Bem-vindo ao primeiro acesso</string>
+    <string name="label_fill_first_access">Preencha os campos abaixo para continuar</string>
+    <string name="hint_cpf">CPF</string>
+
+    <string name="dialog_question">Por onde deseja receber a senha temporária? </string>
+    <string name="dialog_message">O link para a alteração da senha foi enviado para o e-mail cadastrado</string>
+    <string name="dialog_message_SMS">A sua senha temporária foi enviada para seu telefone.</string>
+    <!--<string name="dialog_title">Fundação Zerrenner</string>-->
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_error3">Usuário ou senha inválidos</string>
+    <string name="dialog_error5">Encontramos alguns problemas no seu CPF. Em caso de dúvidas entre em contato com o departamento de RH</string>
+    <string name="required">\*</string>
+
+    <string name="hint_name">Nome</string>
+    <string name="hint_date_of_birth">Data de Nasc.</string>
+    <string name="hint_date_of_birth_personal">Data de Nasc. *</string>
+    <string name="hint_password">Senha</string>
+    <string name="hint_password_confirm">Confirme sua senha</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_branch">Ramal</string>
+    <string name="hint_email_confirm">Confirme seu e-mail</string>
+    <string name="label_first_access">Primeiro Acesso?</string>
+    <string name="label_click_here">Clique aqui!</string>
+    <string name="checkbox_keep_connected">Manter conectado</string>
+    <string name="label_forgot_password">Esqueceu sua senha?</string>
+    <string name="label_have_registration">Já possui cadastro?</string>
+    <string name="button_enter">Entrar</string>
+    <string name="button_support">Acessar o Suporte</string>
+    <string name="button_next">Próximo</string>
+    <string name="button_cancel">Cancelar</string>
+    <string name="description_password">Senha</string>
+    <string name="title_change_password">Alteração de senha</string>
+    <string name="hint_current_password">Senha atual</string>
+    <string name="hint_new_password">Nova senha</string>
+    <string name="hint_confirm_new_password">Confirmar nova senha</string>
+    <string name="button_save">Salvar</string>
+
+    <string name="label_personal_data">Dados Pessoais</string>
+    <string name="text_change_personal_data">Altere seus dados pessoais</string>
+    <string name="text_change_bank_data">Altere seus dados bancários</string>
+    <string name="text_change_address">Altere seu endereço</string>
+    <string name="fragment_personal_data">Dados pessoais</string>
+    <string name="fragment_address">Endereço</string>
+    <string name="fragment_bank_data">Dados bancários</string>
+    <string name="hint_full_name">Nome completo</string>
+    <string name="hint_full_name_mother">Nome da mãe completo</string>
+    <string name="hint_full_name_mother_personal">Nome da mãe completo*</string>
+    <string name="hint_sex">Sexo</string>
+    <string name="hint_sex_personal">Sexo*</string>
+    <string name="hint_nationally">Nacionalidade</string>
+    <string name="hint_civilState">Estado Civil</string>
+    <string name="hint_civilState_personal">Estado Civil*</string>
+    <string name="hint_uf_birth">UF de nasc.</string>
+    <string name="hint_uf_birth_personal">UF de Nasc.*</string>
+    <string name="hint_city_of_birth">Cidade de Nasc.</string>
+    <string name="hint_city_of_birth_personal">Cidade de Nasc.*</string>
+    <string name="hint_phone">Telefone</string>
+    <string name="hint_cellphone">Celular</string>
+    <string name="not_valid_cellphone">Celular não deve conter código do país somente DDD, por favor verificar.</string>
+    <string name="not_valid_phone">Telefone não deve conter código do país somente DDD, por favor verificar.</string>
+    <string name="hint_CEP">CEP</string>
+    <string name="hint_public_place">Logradouro</string>
+    <string name="hint_number">Número</string>
+    <string name="hint_neighborhood">Bairro</string>
+    <string name="hint_uf">UF</string>
+    <string name="hint_city">Cidade</string>
+    <string name="hint_complement">Complemento</string>
+    <string name="hint_country">País</string>
+    <string name="hint_bank">Banco</string>
+    <string name="hint_agency">Agência</string>
+    <string name="hint">A conta não pode ser Conta Salário.</string>
+    <string name="hint_account">Conta</string>
+    <string name="not_valid_personal_data">Por favor verifique os campos a seguir: </string>
+    <string name="text_foreign">estrangeira</string>
+
+
+    <string name="label_documents">Gestão de Documentos</string>
+    <string name="text_filter_document">Filtre a documentação necessária pelo nome</string>
+    <string name="text_data_document">Documentos para completar a ação</string>
+    <string name="text_data_document_for_done">Para confirmar a Inativação do Cadastro envie os documentos solicitado e Salve.</string>
+    <string name="text_data_document_person">Documentos para completar a ação de: </string>
+    <string name="label_name">Nome</string>
+    <string name="label_benefit">Benefício</string>
+    <string name="label_document">DOCUMENTOS</string>
+    <string name="label_type_document">Tipo de Documentos</string>
+    <string name="label_file">Arquivo</string>
+    <string name="label_action">Ação</string>
+    <string name="content_description_document">Tipo de documento</string>
+    <string name="button_add">Adicionar</string>
+    <string name="text_document_inclusion">Inclusão: %1$s</string>
+
+    <string name="label_benefits">Gestão de benefícios</string>
+    <string name="text_benefits">INCLUA OU REMOVA OS BENEFÍCIOS</string>
+    <string name="text_status">Status</string>
+
+    <string name="label_dependents">Dependentes</string>
+    <string name="label_inactive_register_dependents">Inativar Cadastro</string>
+    <string name="label_title_dependent">Inclua ou remova seus dependentes</string>
+    <string name="label_title_new_dependent">Cadastre seu Dependente</string>
+    <string name="label_title_dependent_edit">Altere os dados do dependente</string>
+    <string name="content_description_edit">Editar</string>
+    <string name="content_description_delete">Deletar</string>
+    <string name="button_new_dependent">Adicionar Dependente</string>
+    <string name="button_active_dependent">Ativos</string>
+    <string name="button_inactive_dependent">Inativos</string>
+    // Tela de inclusão de dependente
+    <string name="label_dependent">Dependente</string>
+    <string name="hint_degree_kinship">Grau de Parentesco</string>
+    <string name="hint_gender">Sexo</string>
+    <string name="hint_civil_status">Estado Civil</string>
+    <string name="hint_nationality">Nacionalidade</string>
+    <string name="hint_nationality_personal">Nacionalidade*</string>
+    <string name="hint_student">Estudante</string>
+    <string name="invalid">nome?</string>
+
+    <string name="dialog_title_upload">Upload de Documento</string>
+    <string name="dialog_title">Atenção</string>
+    <string name="dialog_title_recusa_termos"><![CDATA[<b><font color=#ff0000>RECUSA DE TERMOS</font></b>]]></string>
+    <string name="dialog_message_cpf">CPF</string>
+    <string name="dialog_message_pending">Pendente</string>
+    <string name="dialog_message_completed">Concluído</string>
+    <string name="dialog_message_file">O arquivo deve ter no máximo 1MB</string>
+    <string name="dialog_button_send">Enviar</string>
+    <string name="dialog_button_cancel">Cancelar</string>
+    <string name="dialog_button_confirm">confirmar</string>
+    <string name="dialog_message_remove_dependent">Deseja remover o dependente selecionado dos beneficios em que foi cadastrado?</string>
+    <string name="request_permission">Este aplicativo precisa permissão de camera.</string>
+    <string name="request_permission_storage">Este aplicativo precisa permissão de armazenamento.</string>
+    <string name="request_permission_record_audio">Este aplicativo precisa permissão de audio.</string>
+    <string name="camera_error">Este dispositivo não suporta a API de camera.</string>
+
+    <string name="error_cpf_invalid">CPF inválido</string>
+    <string name="error_cpf_empty">CPF não pode ser vazio.</string>
+    <string name="error_birthdate_empty">A data de nascimento não pode ser vazio.</string>
+    <string name="error_birthdate_invalid">A data de nascimento inválido</string>
+    <string name="error_password_short">A senha deve conter no minimo 08 caracteres, uma letra e um número</string>
+    <string name="error_password_empty">A senha não pode ser vazia.</string>
+    <string name="error_password_not_equals">As senhas não correspondem</string>
+    <string name="hint_digit_agency">Díg</string>
+
+    <string name="nav_header_desc">photo</string>
+    <string name="user_name">Nome do Usuário</string>
+    <string name="initialPage">Página Inicial</string>
+    <string name="navigation_drawer_open">Aberto</string>
+    <string name="navigation_drawer_close">Fechado</string>
+    <string name="close">Fechar</string>
+
+    <string name="dialog_camera">Câmera</string>
+    <string name="dialog_text_photo">Tire uma foto</string>
+    <string name="dialog_gallery">Galeria</string>
+    <string name="dialog_text_gallery">Selecione da galeria</string>
+
+
+    <string name="device_not_support_camera">Desculpe, seu dispositivo não suporta câmera</string>
+    <string name="validateSentData">Erro no envio dos dados. Valide a informação enviada.</string>
+    <string name="problemServer">Problema de comunicação com o servidor. Tente novamente mais tarde.</string>
+    <string name="connectionProblemRequest">Estamos com dificuldades para nos conectar ao servidor. Verifique sua conexão ou tente novamente mais tarde.</string>
+
+    <plurals name="question_problem">
+        <item quantity="one">Problema na questão:</item>
+        <item quantity="other">Problema nas questões:</item>
+    </plurals>
+
+
+    <string name="chooseTypeDocument">Qual tipo de documento você deseja subir?</string>
+
+    <!-- TEXTO DOS MODAIS -->
+    <string name="cancel_modal">Cancelar</string>
+    <string name="back_modal">Voltar</string>
+    <string name="confirm_modal">Confirmar</string>
+    <string name="ok_modal">OK</string>
+
+    <!-- TEXTO DO DASHBOARD -->
+    <string name="health_plan">Plano Médico</string>
+    <string name="scholarship">Bolsa de Estudos</string>
+    <string name="christmas">Produtos Natalinos</string>
+    <string name="dental_plan">Plano Odonto</string>
+    <string name="school_supplies">Material Escolar</string>
+    <string name="pharmacy">Farmácia</string>
+    <string name="toy">Brinquedo</string>
+    <string name="doubts">Saiba Mais</string>
+    <string name="questionsandanswers">Dúvidas</string>
+    <string name="NoFragmentFoud">Não foi encontrado o fragmento buscado.</string>
+
+    <!-- Segunda Tela DASHBOARD-->
+    <string name="hi">Olá,</string>
+    <string name="question">O que você deseja fazer?</string>
+
+    <!-- PLANO DE SAUDE -->
+    <string name="include_plan">Solicitar Ativação</string>
+    <string name="include_dependent">Incluir Dependente</string>
+    <string name="change_operator">Alterar Operadora</string>
+    <string name="check_card">Consultar Carteirinha</string>
+    <string name="inactivate_dependent">Inativar Dependente</string>
+    <string name="cancel_plan">Cancelar Plano</string>
+    <string name="request_new_card">Segunda Via Carteirinha</string>
+    <string name="extract_use">Extrato de Utilização</string>
+
+    <string name="accenture">2018 - Versão %1$s(%2$s) - Desenvolvido pela Accenture</string>
+
+
+    <!-- TERMOS DE USO -->
+    <string name="title_terms">Termos de Uso</string>
+    <string name="terms"><b>Information </b> information</string>
+    <string name="terms_accept">Aceitar</string>
+    <string name="terms_refuse">Recusar</string>
+    <string name="reactivate_dependent">Reativar</string>
+
+    <!-- MENSAGENS DE LOADING -->
+    <string name="loading_searching">Buscando as informações, aguarde um momento.</string>
+    <string name="loading_checking_cpf">Verificando CPF, aguarde um momento.</string>
+    <string name="loading_signing_up">Cadastrando, aguarde um momento.</string>
+    <string name="saving_information">Salvando informações, aguarde um momento.</string>
+
+
+    <!-- DEPENDENTE -->
+    <string name="hint_kinship">Grau de Parentesco</string>
+    <string name="marriage_date">Data de Casamento</string>
+    <string name="no">Não</string>
+    <string name="yes">Sim</string>
+    <string name="isdisabled">É inválido(a)?</string>
+    <string name="isstudent">Filho é universitário</string>
+    <string name="iswork">Possui carteira de trabalho?</string>
+    <string name="savingdependent">Salvando dados do dependente.</string>
+    <string name="parent_shared">A guarda é compartilhada?</string>
+    <string name="parent_declared">Possui pai declarado?</string>
+    <string name="adopted">Filho(a) adotivo(a)?</string>
+    <string name="previous_married">Você já foi casado(a) anteriormente?</string>
+    <string name="holder_previous_married">Seu/sua companheiro(a) foi casado(a) anteriormente?</string>
+    <string name="validate_fields">Valide os campos, nem todos foram preenchidos</string>
+
+    <!-- SOLICITAÇÃO -->
+    <string name="request_date">Solicitação: </string>
+    <string name="approved_date">Analisado em: </string>
+
+    <!-- INATIVAÇÃO DEPENDENTE -->
+    <string name="text_modal_inactivate">Inclua  uma justificativa para que a FAHZ possa avaliar sua solicitação de exclusão  do dependente.</string>
+    <string name="discharge_date">Data Desligamento</string>
+    <string name="discharge_reason">Digite aqui sua justificativa</string>
+    <string name="inactivating_dependent">O dependente está sendo inativado. Aguarde.</string>
+    <string name="active_dependente">Ativo</string>
+    <string name="pending_dependente">Pendente</string>
+    <string name="inactive_dependente">Inativo</string>
+
+    <!-- LISTA DEPENDENTES -->
+    <string name="search_dependents">Buscando Dependentes</string>
+    <string name="problem_document">Os Documentos não foram salvos com sucesso.</string>
+    <string name="validate_fields_dependents">Campos em branco ou com preenchimento incorreto, necessário validação.</string>
+    <string name="search_dependent_detail">Buscando os detalhes do dependente.</string>
+    <string name="editing_dependent">Editando dados do dependente.</string>
+    <string name="validating_kinship">Validando o Grau de Parentesco</string>
+
+    <!-- ADESAO PLANO MEDICO -->
+    <string name="continue_button">Continuar</string>
+    <string name="your_operator">A sua operadora é</string>
+    <string name="label_operator">Operadoras</string>
+    <string name="another_operator_description">Caso precise da troca de operadora selecione uma opção abaixo e coloque sua justificativa</string>
+    <string name="choose_operator">Adesão ao Benefício Plano de Saúde</string>
+    <string name="cancel_operation">Cancelar</string>
+
+    <!-- ADESAO PLANO DEPENDENTE-->
+    <string name="title_health_adhesion_dependent">Escolha um dependente para incluir ao Plano de Saúde</string>
+    <string name="adhesion_dependent">Incluir</string>
+    <string name="no_saved_document">Os Documentos não foram salvos com sucesso.</string>
+    <string name="title_dental_adhesion_dependent">Escolha um dependente para incluir ao Plano Odonto</string>
+    <string name="title_pharmacy_adhesion_dependent">Escolha um dependente para incluir ao Plano Farmácia</string>
+
+    <!-- LISTA DE MENSAGENS-->
+    <string name="label_title_message">Veja abaixo as mensagens para você</string>
+    <string name="label_desc_message">Mensagens</string>
+    <string name="button_not_read_message">Não Lidas</string>
+    <string name="search_messages">Buscando Mensagens</string>
+    <string name="button_all_messages">Todas as mensagens</string>
+
+    <!-- LISTA DE REQUEST-->
+    <string name="label_title_request">Acompanhe as solicitações em andamento.</string>
+    <string name="label_desc_requests">Solicitações Realizadas</string>
+    <string name="label_request">Acompanhar Solicitações</string>
+    <string name="approved_request">Aprovado</string>
+    <string name="pending_request">Pendente</string>
+    <string name="disapproved_request">Reprovado</string>
+    <string name="hint_status">Status</string>
+    <string name="search_requests">Buscando Solicitações</string>
+
+    <!-- CANCELAR PLANO TITULAR-->
+    <string name="title_health_cancel_holder">Clique no botão abaixo para cancelar seu plano de saúde</string>
+    <string name="hint_name_holder">Nome</string>
+    <string name="hint_benefit_holder">Benefício</string>
+    <string name="cancel_plan_text">Ao solicitar o cancelamento do seu plano de saúde, o plano de saúde de todos os seus dependentes também serão automaticamente cancelados.</string>
+    <string name="text_modal_inactivate_benefit_health">Inclua uma justificativa para que a FAHZ possa avaliar sua solicitação de cancelamento do plano de saúde.</string>
+    <string name="inactivating_benefit">O benefício está sendo cancelado. Aguarde.</string>
+    <string name="title_dental_cancel_holder">Clique no botão abaixo para cancelar seu plano odonto</string>
+    <string name="title_pharmacy_cancel_holder">Clique no botão abaixo para cancelar seu plano</string>
+    <string name="text_modal_inactivate_benefit_dental">Inclua uma justificativa para que a FAHZ possa avaliar sua solicitação de cancelamento do plano odonto.</string>
+    <string name="text_modal_inactivate_benefit_pharmacy">Inclua uma justificativa para que a FAHZ possa avaliar sua solicitação de cancelamento do plano farmácia.</string>
+    <string name="cancel_plan_text_pharmacy">Ao solicitar o cancelamento do seu plano farmácia, o plano farmácia de todos os seus dependentes também serão automaticamente cancelados.</string>
+    <string name="cancel_plan_text_dental">Ao solicitar o cancelamento do seu plano odonto, o plano odonto de todos os seus dependentes também serão automaticamente cancelados.</string>
+
+    <!-- CANCELAMENTO PLANO DEPENDENTE-->
+    <string name="title_benefit_cancel_dependent">Selecione um dependente para inativar do plano de saúde.</string>
+    <string name="cancel_dependent">Inativar o Plano</string>
+    <string name="title_benefit_dental_cancel_dependent">Selecione um dependente para inativar do plano odonto.</string>
+    <string name="title_benefit_pharmacy_cancel_dependent">Selecione um dependente para inativar do plano farmácia.</string>
+
+    <!-- CARTEIRAS PLANOS DE SAUDE-->
+    <string name="title_plan_card">Veja abaixo os dados do seu plano e de seus dependentes</string>
+    <string name="label_plan_card">Carteirinhas</string>
+    <string name="choose_kinship">Selecione o grau de parentesco.</string>
+    <string name="default_notification_channel_id">fahz_notify_channel</string>
+
+    <!-- ADESAO PLANO DENTAL -->
+    <string name="choose_operator_dental">Adesão ao Benefício Plano Odonto</string>
+
+    <!-- TROCA OPERADORA -->
+    <string name="title_change_operator">Indique abaixo para qual operadora você gostaria de alterar seu plano!</string>
+    <string name="justify">Justificativa - Obrigatória</string>
+    <string name="justification_mandatory">A justificativa é obrigatória.</string>
+
+    <!-- FARMACIA -->
+    <string name="choose_operator_pharmacy">Adesão ao Benefício Plano Farmácia</string>
+
+    <!-- MATERIAL ESCOLAR -->
+    <string name="request_card">Solicitar ou Recarregar Cartão</string>
+    <string name="request_refund">Solicitar Reembolso</string>
+    <string name="send_receipt">Envio de Comprovantes</string>
+    <string name="see_rules">Veja as regras do benefício</string>
+
+    <!-- MATERIAL ESCOLAR - SOLICITAR CARTÃO -->
+    <string name="cannot_request">Não Elegível</string>
+    <string name="choose_schooling">Selecione a escolaridade</string>
+    <string name="choose_people">Escolha os integrantes da família abaixo</string>
+    <string name="request_card_1">A solicitação do cartão auxílio Material Escolar deverá ser realizada a todos os integrantes elegíveis de uma única vez, não sendo permitido solicitações em momentos diferentes. Uma vez solicitado o sistema não permitirá solicitar novamente. Certifique-se de que todos estão cadastrados e ativos no Conecta.</string>
+    <string name="request_card_2">O integrante que constar com a observação em vermelho não poderá ser selecionado. Para mais informações sobre a elegibilidade e regras do benefício favor consultar o padrão Auxílio Material Escolar.</string>
+    <string name="label_request_card">Solicitar Cartão</string>
+    <string name="type_holder">Titular</string>
+    <string name="type_dependent">Dependente</string>
+    <string name="question_mark">\i</string>
+
+    <!-- MATERIAL ESCOLAR - SOLICITAR REEMBOLSO -->
+    <string name="total_value">Valor Total em R$</string>
+    <string name="request_refund_1">A solicitação de rembolso do auxílio Material Escolar deverá ser realizada a todos os integrantes elegíveis de uma única vez, não sendo permitido solicitações em momentos diferentes. Uma vez solicitado o sistema não permitirá solicitar novamente. Certifique-se de que todos estão cadastrados e ativos no Conecta.</string>
+    <string name="label_request_refund">Solicitar Reembolso</string>
+    <string name="hint_observation">Observações da Solicitação</string>
+
+    <!-- MATERIAL ESCOLAR - SOLICITAR CARTÃO -->
+    <string name="choose_people_receipt">Escolha os integrantes da família para envio do recibo</string>
+    <string name="label_send_receipt">Enviar Recibo</string>
+    <string name="information">Informações</string>
+    <string name="accept_terms">Eu aceito os termos.</string>
+
+    <!-- MATERIAL ESCOLAR - RECIBO -->
+    <string name="send_receipt_1">Para enviar as notas fiscais você deverá selecionar cada elegível abaixo e anexar os comprovantes de acordo. Caso tenha uma única nota, anexar a mesma para todos os elegíveis.</string>
+
+    <!-- LISTA TERMO DE USO -->
+    <string name="title_term_of_use">Termos de uso, políticas e privacidade</string>
+    <string name="hint_choose_term">Selecione um termo</string>
+    <string name="label_terms">Termos de Uso</string>
+
+    <string name="select_term">Selecione um dos termos acima para visualizar.</string>
+    <string name="no_path">Não existe arquivo disponível para download.</string>
+    <string name="analysis">Em Análise</string>
+    <string name="not_valid_email">Email inválido, por favor verificar.</string>
+    <string name="requests">Solicitações</string>
+    <string name="messages">Mensagens</string>
+    <string name="video">http://www.fahz.org.br/conecta/aprenda.html</string>
+    <string name="faq">http://www.fahz.org.br/conecta/FAQ.pdf</string>
+
+    <!-- BOLSA DE ESTUDOS -->
+    <string name="request">Solicitar Bolsa de Estudos</string>
+    <string name="refund">Solicitar Reembolso</string>
+    <string name="coursefollowup">Acompanhar curso</string>
+    <string name="congrats">Parabéns!</string>
+    <string name="scholarship_initial_1">Você foi indicado para uma vaga de bolsa auxílio.</string>
+    <string name="scholarship_initial_2">Confirme e atualize seus dados.</string>
+    <string name="lblcourse">Curso</string>
+    <string name="lblScholarship_type">Tipo de Bolsa</string>
+    <string name="lblSchool">Instituição de Ensino</string>
+    <string name="lblEvaluation">Avaliação do IGC</string>
+    <string name="lblCity">Cidade da instituição de ensino</string>
+    <string name="lblStuding">Já está estudando?</string>
+    <string name="lblPeriod">Em qual período?</string>
+    <string name="lblSchooling">Grau de escolaridade atual</string>
+    <string name="lblFinancing">Possui financiamento estudantil?</string>
+    <string name="lblStart">Início do curso em</string>
+    <string name="lblEnd">Término do curso em</string>
+    <string name="confirm_your_data">Confirme e atualize seus dados</string>
+    <string name="start_scholarship">Solicitar Bolsa</string>
+    <string name="data_scholarship">Dados Bancários</string>
+    <string name="lblPhoneToContact">Celular</string>
+
+    <!-- BOLSA DE ESTUDOS - SOLICITAR REEMBOLSO -->
+    <string name="scholarship_refund">Reembolso</string>
+    <string name="scholarship_refund_label">Solicite o reembolso da bolsa de estudos</string>
+    <string name="scholarship_refund_text">Para visualizar e preencher o formulário da solicitação de reembolso favor expandir a tela abaixo clicando em "Mostrar mais..."</string>
+    <string name="read_more">Mostrar mais...</string>
+    <string name="read_less">Ocultar</string>
+    <string name="course_refund">"Curso:  "</string>
+    <string name="type_scholarship_refund">"Tipo de Bolsa:  "</string>
+    <string name="school_refund">"Instituição:  "</string>
+    <string name="start_refund">"Início:  "</string>
+    <string name="end_refund">"Término:  "</string>
+    <string name="scholarship_refund_text_2">Selecione o mês pendente que deseja solicitaro reembolso.</string>
+    <string name="documents">Documentos</string>
+    <string name="pending_refund_request">Pendente Reembolso</string>
+    <string name="refund_value">Valor do Reembolso Previsto</string>
+    <string name="hint_refund_value">Valor gasto</string>
+    <string name="hint_select_parcel">Selecionar parcela</string>
+    <string name="hint_selected_parcel">Parcela selecionada</string>
+
+    <!-- BOLSA DE ESTUDOS - ACOMPANHAMENTO -->
+    <string name="scholarship_followup_label">Mantenha a bolsa atualizada para acompanhamento do curso</string>
+    <string name="scholarship_send_followup">Selecione a pessoa que possui a bolsa de estudos e clique em \"Mostrar mais ...\" para expandir e enviar os documentos para acompanhamento de desempenho.</string>
+    <string name="scholarship_send_followup_2">Envie os documentos para acompanhamentos de desempenho.</string>
+    <string name="hint_date">Data</string>
+
+    <!-- SEGUNDA VIA CARTEIRINHA -->
+    <string name="new_card_label">Segunda via Carteirinha</string>
+    <string name="reason_request_card_label">Motivo</string>
+    <string name="reason_request_card">value</string>
+    <string name="date_request_card_label">Data Última Solicitação</string>
+    <string name="date_request_card">value</string>
+    <string name="lbl_text_card">Selecione o usuário que deseja solicitar a segunda via da carteirinha, clique em \"Mostrar mais...\" e selecione o motivo.</string>
+
+
+    <string name="confirm_request">Confirma o envio da solicitação?</string>
+    <string name="select_picture">Selecione o arquivo</string>
+
+    <string name="menssage_exception_file">Essa fonte de arquivo não é suportada, escolha outra.</string>
+
+    <!-- CESTA DE NATAL -->
+    <string name="christmas_address">Endereço de Entrega / Movimentação</string>
+    <string name="christmas_title">Alteração de local de entrega</string>
+    <string name="christmas_title_address">Seus produtos natalinos estão programados para serem entregues no seguinte local:</string>
+    <string name="christmas_unit">Unidade</string>
+    <string name="christmas_unit_address">Endereço da unidade:</string>
+    <string name="christmas_same_address">Manter local de entrega atual</string>
+    <string name="christmas_alter_address">Informar endereço para entrega</string>
+    <string name="christmas_alter_unit">Alterar unidade de entrega</string>
+    <string name="christmas_alter_unit_desc">Selecione a unidade, filial e empresa do local de entrega desejado.</string>
+    <string name="hint_christmas_unit">Unidade</string>
+    <string name="hint_christmas_subsidiary">Filial</string>
+    <string name="hint_christmas_company">Empresa</string>
+    <string name="christmas_alter_address_desc">Preencha o formulário para o local de entrega desejado.</string>
+    <string name="christmas_eligiblity_rule">Regra de elegibilidade.</string>
+    <string name="header_christmas">Selecionar Endereço</string>
+    <string name="select_unit">Favor, selecionar uma Unidade.</string>
+    <string name="select_subsidiary">Favor, selecionar uma Filial.</string>
+    <string name="select_company">Favor, selecionar uma Empresa.</string>
+    <string name="address_data">Favor, informar os dados obrigatórios do endereço.</string>
+    <string name="number_data">Favor, preencher o campo \"Número\" do endereço..</string>
+
+    <!--PROGRAMA PREGMANT-->
+    <string name="pregnant_program">Programa de Gestante</string>
+    <string name="pregnant_subscription">Inscrição</string>
+    <string name="pregnant_communication">Fale Conosco no WhatsApp</string>
+
+
+    <!--SOLICITAR BRINQUEDO-->
+    <string name="toy_request">Solicitar Brinquedo Para Criança Especial</string>
+    <string name="toy_alert_body_no_dependents">Usuário não possui dependentes elegíveis.</string>
+    <string name="toy_alert_success_body">Sua solicitação foi enviada para análise da Fundação Zerrenner. Acompanhe o status através da opção Minhas Solicitações.</string>
+    <string name="request_new_toy_description">SOLICITE O BRINQUEDO DE NECESSIDADE ESPECIAL PARA SEU(S) DEPENDENTE(S)</string>
+    <string name="toy_list_dependent">Dependente</string>
+    <string name="toy_dependent_card_show_hide">Ocultar</string>
+    <string name="toy_selected_justification_label">Descrição da necessidade especial:</string>
+    <string name="toy_selected_justification_hint">Digite aqui a descrição.</string>
+    <string name="toy_request_instructions">Para solicitar o brinquedo, escolha pelo menos um dependente abaixo que possua alguma necessidade especial.
+Integrante que não estiver elegível não poderá ser escolhido para realizar a solicitação. Para mais informações entre em contato com o suporte.</string>
+
+    <string name="confirm_operation">Confirmar envio de solicitação?</string>
+
+    <string name="btn_request_details">Ver mais</string>
+
+    <string name="no_approve_message">Sem Mensagem de Aprovação</string>
+
+    <!--EXTRATO DE UTILIZACAO-->
+    <string name="header_extract">Utilizações Plano</string>
+    <string name="extract_period_from">De</string>
+    <string name="extract_period_to">Até</string>
+    <string name="extract_period_name">Nome</string>
+    <string name="extract_search">Buscar</string>
+    <string name="extract_title">Extrato de Utilizações</string>
+    <string name="extract_procedure">Procedimento: </string>
+    <string name="extract_value">Valor: </string>
+    <string name="extract_participation">Co-Participação: </string>
+    <string name="extract_health">Plano Médico </string>
+    <string name="extract_dental">Plano Odonto </string>
+    <string name="extract_consult">Consulta de utilizações </string>
+    <string name="error_startdate_empty">A data inicial não pode ser vazia.</string>
+    <string name="error_startdate_invalid">Data inicial inválida</string>
+    <string name="error_enddate_empty">A data final não pode ser vazia.</string>
+    <string name="error_enddate_invalid">Data final inválida</string>
+    <string name="error_range_date">O periódo de consulta é de até 90 dias</string>
+
+    <string name="extract_date_schedule">Data Cronograma: </string>
+    <string name="extract_initial_text">Informe o período para consulta das utilizações com o máximo de 90 dias.</string>
+
+    <string-array name="method_list">
+        <item>EMAIL</item>
+        <item>SMS</item>
+    </string-array>
+    <string-array name="list_menu">
+        <item>PAGINA INICIAL</item>
+        <item>CADASTRO DO TITULAR</item>
+        <item>CADASTRO DE DEPENDENTES</item>
+        <item>PLANO MÉDICO</item>
+        <item>ODONTO</item>
+        <item>FARMÁCIA</item>
+        <item>CESTA NATAL</item>
+        <item>BRINQUEDO</item>
+        <item>MATERIAL ESCOLAR</item>
+        <item>BOLSA DE ESTUDO</item>
+    </string-array>
+    <string-array name="degree_kinship_array">
+        <item>Pai</item>
+        <item>Mãe</item>
+        <item>Filho</item>
+    </string-array>
+    <string-array name="sex_array">
+        <item>Masculino</item>
+        <item>Feminino</item>
+    </string-array>
+    <string-array name="select_array">
+        <item>Selecione</item>
+    </string-array>
+    <string-array name="nationality_array">
+        <item>brasileira</item>
+        <item>estrangeira</item>
+    </string-array>
+    <string-array name="civil_status_array">
+        <item>Casado</item>
+        <item>Solteiro</item>
+        <item>Divorciado</item>
+        <item>Viuvo</item>
+    </string-array>
+    <string-array name="student_array">
+        <item>Estudante</item>
+        <item>Não estudante</item>
+    </string-array>
+    <string-array name="invalid_array">
+        <item>Invalido</item>
+        <item>Valido</item>
+    </string-array>
+    <string-array name="status_array">
+        <item>Pendente</item>
+        <item>Aprovado</item>
+        <item>Reprovado</item>
+    </string-array>
+
+    <string name="title_activity_request_new_toy_acitivity">RequestNewToyAcitivity</string>
+
+    <!-- AGENDAMENTO -->
+    <string name="schedule">Agendamento</string>
+    <string name="schedules">Agendamentos</string>
+    <string name="cancel_schedule_prontmed_dialog_content">Se prosseguir com essa ação o agendamento será cancelado.</string>
+    <string name="cancel_schedule_prontmed_dialog_title">Exclusão de Agendamento</string>
+    <string name="new_schedule">Novo Agendamento</string>
+    <string name="search_doctors">Buscar Médicos</string>
+    <string name="hifen_separator">-</string>
+    <string name="loading">Carregando...</string>
+    <string name="search_doctor_schedule_button_label">Botão de procurar agenda do médico</string>
+    <string name="search_schedule_hint">Data de busca</string>
+    <string name="loading_data">Carregando dados...</string>
+    <string name="find_schedules">Buscar Horários</string>
+    <string name="see_schedule_label">Consultar Agenda</string>
+    <string name="select_a_speciality">Selecione uma especialidade.</string>
+    <string name="description_search_doctor_by_speciality">Botão para pesquisar médicos pela especialidade</string>
+    <string name="select_beneficiary_label">Escolha um beneficiário para realizar o agendamento</string>
+    <string name="schedule_button_label">Agendar</string>
+    <string name="select_beneficiary_title">Selecionar Beneficiário</string>
+    <string name="address_label">Endereço</string>
+    <string name="summary_label">Resumo</string>
+    <string name="doctor_nurse_label">Médico/Enfermeiro</string>
+    <string name="date_label">Data</string>
+    <string name="schedule_label">Horário</string>
+    <string name="selected_date_label">Data Selecionada:</string>
+    <string name="schedules_label">Horários</string>
+    <string name="show_more_label">Mostrar mais...</string>
+    <string name="schedule_my_doctor_label">Agendamento Meu Doutor</string>
+    <string name="select_an_option">Selecione uma opção</string>
+    <string name="prontmed_confirm_schedule_popup_title">Selecione o paciente e confirme o agendamento</string>
+    <string name="family_group">Grupo Familiar</string>
+    <string name="available_hours">Horários Disponíveis</string>
+    <string name="scheduled_appointment">Sua consulta foi agendada com sucesso!</string>
+    <string name="scheduled_new_event">Deseja adicionar um lembrete no calendário do seu dispositivo?</string>
+
+
+    <string name="validation_message_end_date_cannot_be_before_start">Data fim não pode ser menor que data início</string>
+    <string name="validation_message_max_period_between_dates">Período máximo de 90 dias</string>
+    <string name="validation_message_start_date_cannot_be_after_end_date">Data início não pode ser maior que data fim</string>
+    <string name="total_coparticipacao">Total Coparticipação:</string>
+    <string name="total_grupo_familiar">Total grupo familiar:</string>
+
+    <!-- Anamnese -->
+    <string name="anamnese">Perfil de Saúde</string>
+    <string name="anterior">ANTERIOR</string>
+    <string name="proximo">PRÓXIMO</string>
+    <string name="pesquisar_beneficiarios">Insira CPF, SharpID ou Nome do beneficiário</string>
+    <string name="beneficiarios">Beneficiários</string>
+    <string name="questionario_concluido">Questionário concluído</string>
+    <string name="respostas_enviadas_com_sucesso">Respostas enviadas com sucesso.</string>
+    <string name="ver_respostas">VER RESPOSTAS</string>
+    <string name="ver_questionarios">VER QUESTIONÁRIOS</string>
+    <string name="resposta">Resposta</string>
+    <string name="type_life">Beneficiário: %1$s</string>
+    <string name="cpf_life">CPF: %1$s</string>
+    <string name="sharpid_life">SharpID: %1$s</string>
+    <string name="texto_explicativo">Texto explicativo</string>
+    <string name="imagem_explicativa">Imagem explicativa</string>
+    <string name="concluir">CONCLUIR</string>
+    <string name="nc_text">As suas respostas geraram um novo questionário para ser preenchido.</string>
+    <string name="resposta_obrigatoria">Resposta obrigatória</string>
+
+    <string name="apagar_resposta">Apagar resposta</string>
+    <string name="beneficiary_data_text">Confirme se os dados cadastrais estiverem corretos.</string>
+    <string name="cpf">CPF</string>
+    <string name="nome">Nome</string>
+    <string name="mother_name">Nome da mãe</string>
+    <string name="gender">Gênero</string>
+    <string name="feminino">Feminino</string>
+    <string name="masculino">Masculino</string>
+    <string name="nacionalidade">Nacionalidade</string>
+    <string name="data_de_nascimento">Data de nascimento</string>
+    <string name="idade">Idade</string>
+    <string name="cidade_de_nascimento">Cidade de nascimento</string>
+    <string name="estado_civil">Estado civil</string>
+    <string name="celular">Celular</string>
+    <string name="cargo">Cargo</string>
+    <string name="lotacao">Lotação</string>
+    <string name="status">Status</string>
+    <string name="situacao">Situação</string>
+    <string name="empresa">Empresa</string>
+    <string name="grau_parantesco">Grau parantesco</string>
+    <string name="sharpid">SharpID</string>
+    <string name="data_de_admissao">Data de admissão</string>
+    <string name="data_de_demissao">Data de demissão</string>
+    <string name="cep">CEP</string>
+    <string name="logradouro">Logradouro</string>
+    <string name="numero">Número</string>
+    <string name="complemento">Complemento</string>
+    <string name="estado">Estado</string>
+    <string name="altura">Altura</string>
+    <string name="peso">Peso</string>
+    <string name="sua_altura">Exemplo: 1,70</string>
+    <string name="seu_peso">Exemplo: 70,000</string>
+    <string name="imc">IMC</string>
+    <string name="religiao">Religião</string>
+    <string name="pesquisar_religiao">Pesquisar religião</string>
+    <string name="pesquisar">Pesquisar</string>
+    <string name="type_to_search">Digite para pesquisar…</string>
+    <string name="wait_moment">Aguarde um momento</string>
+    <string name="view_answers">Visualizar respostas</string>
+    <string name="confirm_edit">Confirmar edição</string>
+    <string name="do_you_confirm_edit">Deseja confirmar a edição da resposta?</string>
+    <string name="error">Erro</string>
+    <string name="error_saving_answers">Erro ao salvar a resposta!</string>
+    <string name="success">Sucesso</string>
+    <string name="successfully_edited_answer">Resposta editada com sucesso!</string>
+    <string name="questionnaires">Questionários</string>
+    <string name="questionnaires_doing">Últimos questionários respondidos</string>
+    <string name="questionnaires_todo">Questionários a serem respondidos</string>
+    <string name="questionnaires_done">Questionários respondidos</string>
+    <string name="do_you_want_start_questionnaire">Deseja iniciar o questionário?</string>
+    <string name="quest_already_answered">Questionário já respondido!</string>
+    <string name="do_you_want_start_questionnaire_again">Deseja voltar a responder o questionário?</string>
+    <string name="synchronize">Sincronizar</string>
+    <string name="do_you_want_send_answers">Deseja enviar as respostas salvas?</string>
+    <string name="delete">Apagar</string>
+    <string name="do_you_want_see_answers">Deseja visualizar as respostas?</string>
+    <string name="finish">FINALIZAR</string>
+    <string name="clean">Limpar</string>
+    <string name="quit">Sair</string>
+    <string name="do_you_want_save_answers_before_quit">Deseja salvar as respostas antes de sair do questionário?</string>
+    <string name="do_you_want_finish_and_save">Deseja finalizar o questionário e enviar as respostas salvas?</string>
+    <string name="no_answers_to_save">Nenhuma resposta para salvar!</string>
+    <string name="error_downloading_image">Erro ao baixar imagem!</string>
+    <string name="answers_sent_successfully">Respostas enviadas com sucesso!</string>
+    <string name="error_while_searching">Erro durante a pesquisa!</string>
+    <string name="question_only_allows_one_option">Pergunta só permite uma opção!</string>
+    <string name="error_showing_answers">Erro ao mostrar as respostas!</string>
+    <string name="this_quest_cannot_be_changed">Esse questionário não pode ser alterado!</string>
+    <string name="invalid_value">Valor inválido!</string>
+    <string name="question_error">Erro na questão %d!</string>
+    <string name="delete_question_error">Erro ao apagar a resposta da questão %d!!</string>
+    <string name="type_your_answer">Digite sua resposta</string>
+    <string name="select_date">Selecione a data</string>
+    <string name="minimum_value">O valor mínimo é %s!</string>
+    <string name="maximum_value">O valor máximo é %s!</string>
+    <string name="minimum_value_float">O valor mínimo é %.1f!</string>
+    <string name="maximum_value_float">O valor máximo é %.1f!</string>
+    <string name="not_equal_value_float">O valor deve ser diferente de %.1f!</string>
+    <string name="equal_value_float">O valor deve ser igual a %.1f!</string>
+    <string name="minimum_value_int">O valor mínimo é %d!</string>
+    <string name="maximum_value_int">O valor máximo é %d!</string>
+    <string name="not_equal_value_int">O valor deve ser diferente de %d!</string>
+    <string name="equal_value_int">O valor deve ser igual a %d!</string>
+
+    <string name="bmi">%.01f <font color='Black'>●</font> %s</string>
+    <string name="low_weight">Baixo Peso</string>
+    <string name="normal_weight">Peso Normal</string>
+    <string name="overweight">Sobrepeso</string>
+    <string name="obesity_class_1">Obesidade Classe I</string>
+    <string name="obesity_class_2">Obesidade Classe II</string>
+    <string name="obesity_class_3">Obesidade Classe III</string>
+    <string name="mostrar_divisores">Mostrar divisores</string>
+    <string name="ver_resumo">VER RESUMO</string>
+    <string name="responder">RESPONDER</string>
+
+    <string name="search_aux_data_alert">Continue digitando pra aprimorar a pesquisa…</string>
+
+    <!-- Validação Token -->
+    <string name="validade_acess">Validação Acesso</string>
+    <string name="attention_text">Atenção</string>
+    <string name="validation_token_desc">Para continuar é necessário validar seus dados de contato. \n Informe seu e-mail pessoal ou celular, e escolha a forma de validação das informações.</string>
+    <string name="validation_token_desc_validate">Um token foi gerado para o seu CPF. \n Valide o token enviado para o seu e-mail/celular até %s ou altere seus dados de contato para geração de um novo token.</string>
+    <string name="validation_email">Validação por \n e-mail</string>
+    <string name="validation_sms">Validação por \n sms</string>
+    <string name="fill_email">O E-mail deve ser preenchido</string>
+    <string name="fill_sms">O Telefone deve ser preenchido</string>
+    <string name="back_login">Voltar ao Login</string>
+    <string name="edit_values_token">Por motivos de segurança, enviaremos um código para verificar sua identidade. \nPor qual ferramenta você deseja receber o seu código de acesso?</string>
+    <string name="validate_button">Validar</string>
+    <string name="filter_view_http_token">Conecta Fahz</string>
+
+    <string name="low_imc">Seu imc está muito baixo, deseja prosseguir mesmo assim?</string>
+    <string name="high_imc">Seu imc está muito alto, deseja prosseguir mesmo assim?</string>
+
+    <string name="registration_validation">Validação Cadastro</string>
+    <string name="ok">OK</string>
+    <string name="validation_initial">
+    Para continuar com a validação de seu cadastro, em alguns instantes, você vai receber por e-mail ou por SMS o seu token de acesso, que será
+        enviado pelo endereço <font color='#FF8E8E93'>sistemas.token1@fahz.com.br</font> ou
+        <font color='#FF8E8E93'>sistemas.token2@fahz.com.br</font>. Fique de olho na sua caixa de Spam.
+    </string>
+    <string name="steps_title">Para ativar seu acesso, siga o passo a passo abaixo:</string>
+    <string name="step_1">1 - Na sua caixa de e-mail ou SMS, abra a mensagem enviada pela Fundação Zerrenner sobre o token do Conecta.</string>
+    <string name="step_2">2 - Digite o código enviado no aplicativo ou página do Conecta FAHZ.</string>
+    <string name="step_3">3 - Pronto! Seu acesso estará ativado.</string>
+    <string name="step_problem">Problemas? </string>
+    <string name="step_descrition_problem">Caso não receba o código, verifique se o contato informado está correto e aguarde 5 minutos para fazer uma nova solicitação. Se o erro persistir, por gentileza, abra um chamado no NOW, na opção Conecta FAHZ – Suporte Técnico</string>
+    <string name="question_token_1">Para continuar é necessário validar seus dados de contato.</string>
+    <string name="question_token_2">Escolha a forma de validação das informações.</string>
+    <string name="token_email">Enviar por \n Email</string>
+    <string name="token_sms">Enviar por \n SMS</string>
+    <string name="back">Voltar</string>
+    <string name="placeholder_email_token">exemplo@exemplo.com</string>
+    <string name="placeholder_cellphone_token">(99) 99999-9999</string>
+    <string name="hint_email_token">Email Pessoal</string>
+    <string name="hint_cellphone_token">Celular com DDD</string>
+    <string name="insert_token">Para continuar é necessário validar o token que foi enviado por e-mail ou celular</string>
+    <string name="initial_sent_token">Insira o código de verificação para continuar.</string>
+    <string name="did_not_receive_token"> Você não recebeu o código?</string>
+    <string name="resent_token">Reenviar o Código</string>
+    <string name="validating_token">Validando o Token</string>
+    <string name="validation_success">Validado com Sucesso!</string>
+    <string name="validation_fail">Verifique o código e envie novamente.</string>
+    <string name="insert_token_button">Inserir Token</string>
+    <string name="annual_documents_title">Gestão de Documentos Anuais</string>
+    <string name="annual_documents">Documentos anuais</string>
+    <string name="search_for_dependents">Filtre seus dependentes</string>
+
+    <string name="warningversion">A partir de 31 de outubro de 2019 o Conecta Fahz não terá mais suporte para a sua versão do sistema operacional Android. A aplicação poderá falhar em algumas funcionalidades e melhorias não poderão ser baixadas.</string>
+
+    <string name="check_send_document">Certifique-se de enviar os comprovantes de forma legível, conforme determinado no padrão.</string>
+    <string name="check_send_refund">Documentação enviada com sucesso. Sujeito à auditoria.</string>
+
+
+    <string name="telehealth">Einstein Conecta</string>
+    <string name="telehealth_button_label">Iniciar</string>
+    <string name="telehealth_choose_beneficiary_popup_title">Selecione o paciente e inicie a Telemedicina</string>
+
+    <string name="view_message">Mensagem</string>
+    <string name="list_message">Lista de Mensagens</string>
+    <string name="url_view_message">Home/VisualizarMensagem?</string>
+
+    <!--LGPD-->
+    <string name="label_privacy_terms">Privacidade e Termos</string>
+    <string name="title_policy_privacy">Política de Privacidade</string>
+    <string name="title_policy_use_data">Política de Uso de Dados</string>
+    <string name="title_privacy_control">Controle de Privacidade</string>
+    <string name="title_control_term_service">Controle de Termos de Serviço</string>
+    <string name="title_term_service">Termos de Serviço</string>
+    <string name="title_notification">Notificação</string>
+    <string name="title_transparency">Transparência</string>
+
+
+    <string name="lgpd_news">Novidades</string>
+    <string name="news_close">Fechar</string>
+    <string name="accept_terms_lgpd">Li e estou ciente.</string>
+    <string name="accept_police_lgpd">Li e estou ciente.</string>
+    <string name="text_effetive_from">Em vigor a partir de </string>
+    <string name="text_policy_acceptance">Aceite de Políticas </string>
+    <string name="text_term_acceptance">Aceite de Termos </string>
+
+    <string name="medical_record">Meu Prontuário</string>
+    <string name="usage_history">Histórico das Utilizações</string>
+    <string name="type_of_usage">Tipo de Utilização</string>
+
+    <string-array name="type_medical_records_array">
+        <item>Selecione</item>
+        <item>Anamnese</item>
+        <item>Consultas Realizadas</item>
+        <item>Resumo Clínico</item>
+    </string-array>
+
+    <string name="medical_records">Consultas</string>
+    <string name="medical_records_details">Detalhe da Consulta</string>
+
+    <string-array name="clinical_summary_array">
+        <item>Doenças Diagnosticadas</item>
+        <item>Tratamentos em Andamento</item>
+        <item>Alergias</item>
+        <item>Antecedentes Familiares</item>
+        <item>Cirurgias</item>
+    </string-array>
+
+    <string name="clinical_summary">Resumo Clínico</string>
+    <string name="textview">TextView</string>
+    <string name="todo">TODO</string>
+    <string name="no_found_record_of_clinical_summary">Não foram encontrados registros de </string>
+    <string name="no_found_medical_record">Não foram encontrados registros de consultas realizadas dentro do programa Meu Doutor para serem exibidas. Verifique em sua unidade se tem disponível o Programa Meu Doutor. Em breve traremos para visualização os registros médicos relevantes realizados em sua operadora de saúde.</string>
+    <string name="no_found_anamnese">Não encontramos questionário Anamnese concluído. Acesse o menu Perfil de Saúde dentro da área Plano Médico para respondê-lo.</string>
+</resources>

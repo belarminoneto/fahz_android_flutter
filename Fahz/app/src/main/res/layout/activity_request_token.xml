@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/changePasswordContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundDefault"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_dark"
+                android:padding="12dp"
+                android:text="@string/attention_text"
+                android:textAllCaps="true"
+                android:textColor="@color/white_text"
+                android:textSize="@dimen/text_size_small"
+                app:fontFamily="@font/opensans_bold" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:background="@color/grey_light_text"
+                android:padding="12dp"
+                android:text="@string/validation_token_desc"
+                android:textAllCaps="true"
+                android:textColor="@color/grey_dark"
+                android:textSize="@dimen/text_size_small"
+                app:fontFamily="@font/opensans_bold" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/description"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:hint="@string/hint_email_token"
+                android:textColorHint="@color/grey_dark"
+                android:textSize="@dimen/text_size_medium"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_medium"
+                    app:fontFamily="@font/opensans_semibold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/smsTextIpunt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailTextInput"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:hint="@string/hint_cellphone_token"
+                android:textColorHint="@color/grey_dark"
+                android:textSize="@dimen/text_size_medium">
+
+                <br.com.avanade.fahz.controls.PhoneEditText
+                    android:id="@+id/phone_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_medium"
+                    app:fontFamily="@font/opensans_semibold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:id="@+id/buttonsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/smsTextIpunt"
+                android:layout_margin="16dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/email_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button_enter"
+                    android:text="@string/validation_email"
+                    android:textColor="@color/white_text"
+                    android:textSize="12sp"
+                    app:fontFamily="@font/opensansregular" />
+
+                <Button
+                    android:id="@+id/sms_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button_enter"
+                    android:padding="12dp"
+                    android:text="@string/validation_sms"
+                    android:textColor="@color/white_text"
+                    android:textSize="12sp"
+                    app:fontFamily="@font/opensansregular" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/insertTokenButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonsLayout"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_add"
+                android:text="@string/insert_token_button"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                app:fontFamily="@font/opensansregular" />
+
+            <Button
+                android:id="@+id/logout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_enter"
+                android:text="@string/back_login"
+                android:textColor="@color/white_text"
+                android:textSize="12sp"
+                app:fontFamily="@font/opensansregular" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

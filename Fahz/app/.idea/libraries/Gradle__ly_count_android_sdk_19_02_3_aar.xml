@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: ly.count.android:sdk:19.02.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0e2f604cbcb096e80af488b7f7a8515d/sdk-19.02.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0e2f604cbcb096e80af488b7f7a8515d/sdk-19.02.3/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ly.count.android/sdk/19.02.3/3a4ff0ffc204d7c81dd04aaea1e6eb7bf980e158/sdk-19.02.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ly.count.android/sdk/19.02.3/5d6cedd6e7f5d847399f98714e2d2375f88fa7e6/sdk-19.02.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

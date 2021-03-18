@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#005F99</color>
+    <color name="colorPrimaryDark">#005F99</color>
+    <color name="colorAccent">#005F99</color>
+    <color name="blueHeader">#005F99</color>
+
+    <color name="launcherBackground">#FFF0EEE8</color>
+    <color name="backgroundDefault">#FFF9F9F9</color>
+    <color name="white_text">#FFFFFF</color>
+    <color name="grey_text">#AEAEAE</color>
+    <color name="blue_text">#FF0A3B7D</color>
+
+    <color name="test">#f7f8fa</color>
+    <color name="white01">#FFFFFF</color>
+    <color name="white02">#F9F9F9</color>
+    <color name="white03">#F8F8FB</color>
+    <color name="white04">#F5F5F5</color>
+
+    <color name="grey_dark">#555555</color>
+    <color name="grey_disabled_text">#8F8F8F</color>
+    <color name="grey_light">#697687</color>
+    <color name="grey_light_text">#C4C5BD</color>
+    <color name="grey_light_text_disable">#e0e0e0</color>
+    <color name="grey_border">#F2F2F2</color>
+    <color name="grey_disable_circle">#e8e8e8</color>
+    <color name="blue_dark">#005F99</color>
+    <color name="blue_light">#00B5E2</color>
+    <color name="black">#000000</color>
+    <color name="green">#78BE20</color>
+    <color name="green_steps">#FF71C65B</color>
+    <color name="red">#f35a59</color>
+    <color name="menu">#555566</color>
+    <color name="menu_dark">#484854</color>
+    <color name="menu_light">#6E6E7D</color>
+    <color name="header_app">#005e98</color>
+    <color name="colorGradientEnd">#F0EEE8</color>
+    <color name="colorGradientStart">#EEECE8</color>
+    <color name="yellow">#FFC107</color>
+    <color name="red_info">#DC3545</color>
+    <color name="blue_dark_card">#004D7C</color>
+    <color name="pedding_refund">#cca300</color>
+    <color name="blue_light_circle">#007cff</color>
+    <color name="grey_super_light_text">#BCC5D3</color>
+    <color name="grey_light_border">#66E2E8ED</color>
+
+
+    <color name="operator_red">#FF3E47</color>
+    <color name="operator_blue">#005E98</color>
+
+    <color name="status_orange">#ffab00</color>
+    <color name="status_red">#d50000</color>
+    <color name="status_green">#64dd17</color>
+
+    <color name="grey_header">#F0F0F1</color>
+    <color name="grey_content">#f7f8fa</color>
+    <color name="grey_document">#FFFFFF</color>
+
+</resources>

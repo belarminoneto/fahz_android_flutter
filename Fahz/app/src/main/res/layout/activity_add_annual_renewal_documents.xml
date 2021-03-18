@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/document_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white01"
+    tools:context=".activities.AnnualRenewalDocumentsActivity">
+
+    <!-- Save & Cancel Button -->
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="@dimen/default_small_margin"
+        android:background="@drawable/bg_button_material_primary"
+        android:text="@string/button_save"
+        android:textColor="@color/white_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cancel_button" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_button_material"
+        android:text="@string/cancel_modal"
+        android:textColor="@color/blue_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/save_button"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Documents Header -->
+    <LinearLayout
+        android:id="@+id/header_document"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_life_name">
+
+        <View
+            android:id="@+id/rectangle_new"
+            android:layout_width="5dp"
+            android:layout_height="40dp"
+            android:background="@color/blueHeader"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/nav_spacing"
+            android:layout_marginLeft="@dimen/nav_spacing"
+            android:layout_marginTop="@dimen/nav_spacing"
+            android:text="@string/label_document"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            app:fontFamily="@font/opensans_bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <!-- Document Title -->
+    <TextView
+        android:id="@+id/tv_life_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/default_medium_margin"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="Alfredo da Silva"
+        android:textSize="@dimen/title_2_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <!-- List of Documents -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewDocumentTypes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/save_button"
+        android:layout_below="@id/header_document"
+        android:layout_marginBottom="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/save_button"
+        app:layout_constraintTop_toBottomOf="@+id/header_document" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/includeHeader"
+        layout="@layout/content_header_toolbar_status" />
+
+    <br.com.avanade.fahz.util.CustomViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomLinear"
+        app:layout_constraintTop_toBottomOf="@id/includeHeader" />
+
+    <LinearLayout
+        android:id="@+id/bottomLinear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_back"
+            android:drawableLeft="@drawable/ico_voltar"
+            tools:text="ANTERIOR"
+            android:textColor="@color/colorAccent"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_next"
+            android:drawableRight="@drawable/ico_avancar"
+            tools:text="PRÓXIMO"
+            android:textColor="@color/grey_border"
+            tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@color/white_text"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        style="@style/TextQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Sarampo (T. Viral)" />
+
+    <TextView
+        android:id="@+id/txtAnswer"
+        style="@style/answers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@id/txtTitle"
+        app:layout_constraintEnd_toStartOf="@id/imgEdit"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle"
+        tools:text="SIM"
+        tools:ignore="RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/imgEdit"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:visibility="gone"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/txtAnswer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtAnswer"
+        app:srcCompat="@drawable/ic_editar"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

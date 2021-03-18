@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundDefault">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:padding="24dp"
+        android:paddingTop="16dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_horizontal"
+            android:layout_marginBottom="@dimen/padding_image"
+            android:contentDescription="@string/logo"
+            app:srcCompat="@drawable/logo_conecta_fahz" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_horizontal"
+            android:layout_marginTop="@dimen/top_margin_login"
+            android:text="@string/label_type_it"
+            android:textStyle="normal"
+            app:fontFamily="@font/opensans_semibold"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cpf_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_margin_login"
+            android:hint="@string/hint_cpf">
+
+            <EditText
+                android:id="@+id/cpf_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:maxLines="11"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/black"
+                android:drawableRight="@drawable/ic_cancel"
+                android:drawableEnd="@drawable/ic_cancel"
+                app:fontFamily="@font/opensans_semibold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_password"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/black"
+                app:fontFamily="@font/opensans_semibold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:switchPadding="10dp"
+                android:layoutDirection="rtl"
+                android:text="@string/checkbox_keep_connected"
+                app:fontFamily="@font/opensans_semibold"
+                android:textColor="@color/grey_light"
+                android:textSize="@dimen/text_size_small"
+                tools:targetApi="jelly_bean_mr1" />
+
+            <TextView
+                android:id="@+id/text_reset_password"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_gravity="end"
+                android:gravity="center_vertical|end"
+                android:text="@string/label_forgot_password"
+                app:fontFamily="@font/opensans_semibold"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/grey_light"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_enter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_button_enter"
+            android:text="@string/button_enter"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/white01"
+            app:fontFamily="@font/opensansregular"/>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_margin_login"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/text_first_access"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/label_first_access"
+                app:fontFamily="@font/opensansregular"/>
+            <TextView
+                android:id="@+id/text_click_here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/text_first_access"
+                android:layout_toEndOf="@id/text_first_access"
+                android:text="@string/label_click_here"
+                android:textColor="@color/colorAccent"
+                app:fontFamily="@font/opensans_bold"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_versao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/accenture"
+            app:fontFamily="@font/opensansregular"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/button_support"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/button_support"
+            android:textSize="@dimen/text_size_small"
+            style="?android:attr/borderlessButtonStyle"
+            app:fontFamily="@font/opensansregular" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Fahz.iml" filepath="$PROJECT_DIR$/.idea/modules/Fahz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Fahz.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Fahz.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1807282050/Fahz.fahzv2.iml" filepath="$PROJECT_DIR$/.idea/modules/1807282050/Fahz.fahzv2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/429994363/Fahz.flutter.iml" filepath="$PROJECT_DIR$/.idea/modules/429994363/Fahz.flutter.iml" />
+    </modules>
+  </component>
+</project>

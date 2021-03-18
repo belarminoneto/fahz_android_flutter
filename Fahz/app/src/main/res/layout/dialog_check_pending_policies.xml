@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white01"
+    android:id="@+id/terms_container"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_qtd_policies_pending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundDefault"
+        android:padding="15dp"
+        android:text="text_qtd_policies_pending"
+        android:textAllCaps="false"
+        android:textColor="@color/blue_text"
+        android:textSize="@dimen/text_size"
+        app:fontFamily="@font/opensans_bold" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_qtd_policies_pending"
+        android:layout_above="@id/relative_layout_bottom_content">
+    <LinearLayout
+        android:id="@+id/linear_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="txtTitle"
+            android:textAlignment="center"
+            android:textSize="@dimen/title_2_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtTermText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:text="@string/terms" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/check_accept_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/accept_police_lgpd"/>
+    </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/relative_layout_bottom_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnDialogSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/terms_accept"
+            android:textColor="@color/white_text"
+            android:background="@drawable/custom_button_accept_term"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnDialogCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/terms_refuse"
+            android:textColor="@color/white_text"
+            android:background="@drawable/sec_button"
+            android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_questionario_busca"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/txtName"
+        style="@style/TitleQuestionnaire"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Fulano de tal" />
+
+    <TextView
+        android:id="@+id/txtType"
+        style="@style/typeLife"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@id/txtName"
+        app:layout_constraintTop_toBottomOf="@id/txtName"
+        tools:ignore="RtlHardcoded"
+        tools:text="Conjugue" />
+
+    <TextView
+        android:id="@+id/txtCPF"
+        style="@style/infoLife"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@id/txtName"
+        app:layout_constraintTop_toBottomOf="@id/txtType"
+        tools:text="CPF: 094.345.345-34" />
+
+    <TextView
+        android:id="@+id/txtSharp"
+        style="@style/infoLife"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@id/txtCPF"
+        app:layout_constraintTop_toBottomOf="@id/txtType"
+        tools:ignore="RtlHardcoded"
+        tools:text="ShapID: 465435" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

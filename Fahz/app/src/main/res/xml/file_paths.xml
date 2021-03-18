@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path name="my_images" path="Android/data/br.com.avanade.fahz/files/Pictures" />
+    <external-path name="my_files" path="Android/data/br.com.avanade.fahz/files/" />
+    <external-path name="show_files" path="data/user/0/br.com.avanade.fahz/cache/" />
+    <external-path name="files_emulator" path="data/data/br.com.avanade.fahz/cache/" />
+    <external-path
+        name="external"
+        path="." />
+    <external-files-path
+        name="external_files"
+        path="." />
+    <cache-path
+        name="cache"
+        path="." />
+    <external-cache-path
+        name="external_cache"
+        path="." />
+    <files-path
+        name="files"
+        path="." />
+</paths>

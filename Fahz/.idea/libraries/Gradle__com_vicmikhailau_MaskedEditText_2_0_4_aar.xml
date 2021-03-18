@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.vicmikhailau:MaskedEditText:2.0.4@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3f156bb164b8a0b473df6e071763e9e9/jetified-MaskedEditText-2.0.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3f156bb164b8a0b473df6e071763e9e9/jetified-MaskedEditText-2.0.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3f156bb164b8a0b473df6e071763e9e9/jetified-MaskedEditText-2.0.4/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.vicmikhailau/MaskedEditText/2.0.4/a5972893293d2bef2b3139ef67f1c535a9924116/MaskedEditText-2.0.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.vicmikhailau/MaskedEditText/2.0.4/41f4c65ecc03f21ac9ff2756bbf105001b617fe3/MaskedEditText-2.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
